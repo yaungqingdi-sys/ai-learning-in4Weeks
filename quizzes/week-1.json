@@ -1,0 +1,309 @@
+{
+  "quiz_id": "week-1",
+  "title": "第1周测验：AI基础与工具地图",
+  "description": "覆盖 AI 基础概念、工具分工、任务判断与验证意识。",
+  "passing_percent": 80,
+  "questions": [
+    {
+      "id": "W1-001",
+      "type": "single_choice",
+      "prompt": "下面哪种说法最接近“AI”的合理定义？",
+      "options": [
+        {"key": "A", "text": "一个固定软件产品的名字"},
+        {"key": "B", "text": "让机器表现出某种像会思考的能力"},
+        {"key": "C", "text": "只能回答问题的大模型"},
+        {"key": "D", "text": "所有自动化脚本的统称"}
+      ],
+      "answer": "B",
+      "explanation": "AI 是更宽的概念，大模型只是其中一种实现形态。",
+      "score": 3,
+      "tags": ["ai-basics", "definition"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W1-002",
+      "type": "single_choice",
+      "prompt": "AI Search 和 AI Chat 的主要区别，最准确的是哪项？",
+      "options": [
+        {"key": "A", "text": "AI Search 只能离线使用"},
+        {"key": "B", "text": "AI Chat 一定比 AI Search 新"},
+        {"key": "C", "text": "AI Search 更强调找资料和来源，AI Chat 更强调解释和交互"},
+        {"key": "D", "text": "两者没有本质区别"}
+      ],
+      "answer": "C",
+      "explanation": "Search 偏检索与来源，Chat 偏组织表达和多轮对话。",
+      "score": 3,
+      "tags": ["tools", "chat-vs-search"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W1-003",
+      "type": "single_choice",
+      "prompt": "Agent 和普通 Chat 的关键区别通常在于什么？",
+      "options": [
+        {"key": "A", "text": "Agent 一定更会写诗"},
+        {"key": "B", "text": "Agent 只能处理代码任务"},
+        {"key": "C", "text": "Chat 不能输出列表"},
+        {"key": "D", "text": "Agent 会围绕目标分步骤执行，并可能调用工具"}
+      ],
+      "answer": "D",
+      "explanation": "Agent 的重点是围绕目标执行流程，而不是单轮表达。",
+      "score": 3,
+      "tags": ["agent", "tools"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W1-004",
+      "type": "single_choice",
+      "prompt": "下面哪项最符合 vibe coding 的入门理解？",
+      "options": [
+        {"key": "A", "text": "先做能跑的简单版，再逐步加验证和收紧质量"},
+        {"key": "B", "text": "完全不需要理解代码，只要复制运行"},
+        {"key": "C", "text": "先做复杂架构，避免返工"},
+        {"key": "D", "text": "把所有任务都外包给 AI"}
+      ],
+      "answer": "A",
+      "explanation": "vibe coding 强调快速成形，但不等于跳过验证。",
+      "score": 3,
+      "tags": ["vibe-coding", "workflow"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W1-005",
+      "type": "single_choice",
+      "prompt": "以下哪个任务最适合先让 AI 直接参与？",
+      "options": [
+        {"key": "A", "text": "替代律师直接给正式法律意见"},
+        {"key": "B", "text": "把会议记录整理成结构化摘要"},
+        {"key": "C", "text": "在没有验证的情况下替你审批生产变更"},
+        {"key": "D", "text": "代替你做不可逆的资金转账决策"}
+      ],
+      "answer": "B",
+      "explanation": "整理和改写是 AI 的常见强项，高风险决策不适合直接外包。",
+      "score": 3,
+      "tags": ["task-fit", "judgment"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W1-006",
+      "type": "single_choice",
+      "prompt": "以下哪类任务最不应该只依赖 AI 直接给结论？",
+      "options": [
+        {"key": "A", "text": "写活动文案初稿"},
+        {"key": "B", "text": "生成复习提纲"},
+        {"key": "C", "text": "把长文改写成口语版"},
+        {"key": "D", "text": "高风险合规判断"}
+      ],
+      "answer": "D",
+      "explanation": "高风险任务需要专业审查和责任承担，不能只靠模型输出。",
+      "score": 3,
+      "tags": ["boundaries", "task-fit"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W1-007",
+      "type": "single_choice",
+      "prompt": "如果你的任务是理解一个本地代码仓库并改一个小功能，优先考虑哪类工具？",
+      "options": [
+        {"key": "A", "text": "纯图片生成工具"},
+        {"key": "B", "text": "只做网页摘要的工具"},
+        {"key": "C", "text": "AI Coding 工具"},
+        {"key": "D", "text": "音乐生成工具"}
+      ],
+      "answer": "C",
+      "explanation": "这类任务需要理解代码、文件和命令执行，Coding 工具更合适。",
+      "score": 3,
+      "tags": ["tools", "coding"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W1-008",
+      "type": "single_choice",
+      "prompt": "NotebookLM 这类资料型工具最适合哪种场景？",
+      "options": [
+        {"key": "A", "text": "围绕你上传的资料做问答和提炼"},
+        {"key": "B", "text": "直接修改本地 Python 文件"},
+        {"key": "C", "text": "替代 Git 管理版本历史"},
+        {"key": "D", "text": "执行系统命令"}
+      ],
+      "answer": "A",
+      "explanation": "资料型工具的优势在于围绕给定文档学习和整理。",
+      "score": 3,
+      "tags": ["tools", "notebook"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W1-009",
+      "type": "true_false",
+      "prompt": "AI 输出越流畅，说明结果越可靠。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": false,
+      "explanation": "表达流畅不等于事实正确，仍需验证。",
+      "score": 3,
+      "tags": ["verification", "misconception"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W1-010",
+      "type": "true_false",
+      "prompt": "AI Search 一般比纯 Chat 更强调来源和检索结果。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": true,
+      "explanation": "Search 的价值之一就是把结果和来源关联起来。",
+      "score": 3,
+      "tags": ["tools", "search"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W1-011",
+      "type": "true_false",
+      "prompt": "只要是复杂任务，都应该直接上 Agent。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": false,
+      "explanation": "是否用 Agent 取决于任务是否需要分步执行和工具调用，不是越复杂越好。",
+      "score": 3,
+      "tags": ["agent", "misconception"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W1-012",
+      "type": "true_false",
+      "prompt": "AI Coding 产出的代码也需要测试和复查。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": true,
+      "explanation": "代码结果是否可用，不能只看 AI 是否输出了代码。",
+      "score": 3,
+      "tags": ["coding", "verification"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W1-013",
+      "type": "short_answer",
+      "prompt": "用 2 到 4 句话说明“大模型”和“搜索引擎”的一个关键区别。",
+      "answer": [
+        "大模型主要根据训练和上下文组织生成答案",
+        "搜索引擎主要帮助检索外部信息和来源",
+        "两者可以结合，但作用不相同"
+      ],
+      "explanation": "关键是区分“生成组织”与“检索定位”。",
+      "score": 5,
+      "tags": ["ai-basics", "chat-vs-search"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W1-014",
+      "type": "short_answer",
+      "prompt": "写出 AI 擅长的两个任务类型，以及一个需要特别谨慎的任务类型。",
+      "answer": [
+        "擅长解释、总结、改写、头脑风暴、初步代码辅助等",
+        "谨慎处理高风险决策、正式合规判断、未经验证的事实结论等"
+      ],
+      "explanation": "题目考察的是任务判断而不是词汇背诵。",
+      "score": 5,
+      "tags": ["task-fit", "judgment"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W1-015",
+      "type": "short_answer",
+      "prompt": "什么是 vibe coding？请同时写出它的一个好处和一个风险。",
+      "answer": [
+        "vibe coding 是先快速做出能运行的简单版本",
+        "好处是降低启动成本并加快试错",
+        "风险是容易跳过验证、误以为能跑就等于正确"
+      ],
+      "explanation": "必须同时答出工作方式、收益和风险。",
+      "score": 5,
+      "tags": ["vibe-coding", "verification"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W1-016",
+      "type": "short_answer",
+      "prompt": "你会如何判断一个任务适不适合交给 AI？至少写出 3 个判断条件。",
+      "answer": [
+        "任务风险高低",
+        "是否需要外部最新来源",
+        "是否容易验证结果",
+        "是否需要责任承担和专业审查",
+        "是否只是整理性工作"
+      ],
+      "explanation": "答案不要求完全一致，但应覆盖风险、验证和任务性质。",
+      "score": 5,
+      "tags": ["task-fit", "verification"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W1-017",
+      "type": "scenario",
+      "prompt": "你拿到一份长 PDF，目标是先理解重点，再快速准备 5 道复习题。你会优先怎么选工具和步骤？",
+      "answer": [
+        "优先选择资料型工具或能围绕文档问答的工具",
+        "先做摘要和知识点提取",
+        "再让 AI 生成复习题",
+        "最后人工抽查关键结论是否贴合原文"
+      ],
+      "explanation": "题目考察的是工具分工和最小学习流程。",
+      "score": 5,
+      "tags": ["tools", "learning-workflow"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W1-018",
+      "type": "scenario",
+      "prompt": "你需要查一个最近更新过的官方技术文档。此时为什么不能只依赖记忆型问答？",
+      "answer": [
+        "因为信息可能已变化",
+        "需要直接看最新来源或官方文档",
+        "应优先使用检索或浏览型能力确认",
+        "问答可以帮助解释，但不能替代查证"
+      ],
+      "explanation": "题目考查“最新信息需要来源确认”的意识。",
+      "score": 5,
+      "tags": ["search", "verification", "latest-info"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W1-019",
+      "type": "scenario",
+      "prompt": "经理让你“直接让 AI 重写一遍老项目，再上线看看”。作为新人，你更稳妥的回应应该是什么？",
+      "answer": [
+        "先拒绝大范围盲改",
+        "建议先理解项目和定位小范围问题",
+        "只做最小改动并设定验收标准",
+        "在验证通过前不建议上线"
+      ],
+      "explanation": "考的是 AI Coding 的边界和最小改动意识。",
+      "score": 5,
+      "tags": ["coding", "verification", "risk"],
+      "difficulty": "hard"
+    },
+    {
+      "id": "W1-020",
+      "type": "scenario",
+      "prompt": "你想做一个“自动整理学习笔记”的小工具。请给出一个先写简单版的工作顺序。",
+      "answer": [
+        "先定义最小输入和最小输出",
+        "先做能运行的简单版本",
+        "用少量样例验证结果",
+        "再考虑补充格式优化或更多功能"
+      ],
+      "explanation": "先明确边界、再做最小版本、再验证，是稳定入门方式。",
+      "score": 5,
+      "tags": ["vibe-coding", "workflow", "verification"],
+      "difficulty": "medium"
+    }
+  ]
+}

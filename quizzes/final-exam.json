@@ -1,0 +1,458 @@
+{
+  "quiz_id": "final-exam",
+  "title": "期末综合测试：新人快速理解 AI",
+  "description": "综合考查 AI 基础、提示词协作、AI Coding、学习闭环、网络与安全边界。",
+  "passing_percent": 80,
+  "questions": [
+    {
+      "id": "FINAL-001",
+      "type": "single_choice",
+      "prompt": "下面哪项最准确地描述了本课程里的“AI”？",
+      "options": [
+        {"key": "A", "text": "所有自动化工具的统称"},
+        {"key": "B", "text": "让机器展现某种智能行为的能力集合"},
+        {"key": "C", "text": "只有聊天机器人才算 AI"},
+        {"key": "D", "text": "只能在线使用的模型"}
+      ],
+      "answer": "B",
+      "explanation": "AI 是更大的概念，不等于某一个产品。",
+      "score": 3,
+      "tags": ["ai-basics"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "FINAL-002",
+      "type": "single_choice",
+      "prompt": "当你需要最近更新的官方技术信息时，最合理的第一动作是什么？",
+      "options": [
+        {"key": "A", "text": "只问记忆型问答模型"},
+        {"key": "B", "text": "优先查官方来源或检索最新文档"},
+        {"key": "C", "text": "直接用旧笔记作答"},
+        {"key": "D", "text": "随机找论坛帖子"}
+      ],
+      "answer": "B",
+      "explanation": "最新信息需要来源确认，不能只靠记忆型回答。",
+      "score": 3,
+      "tags": ["search", "verification", "latest-info"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "FINAL-003",
+      "type": "single_choice",
+      "prompt": "下面哪项最符合“好提示词”的思路？",
+      "options": [
+        {"key": "A", "text": "只堆很多形容词"},
+        {"key": "B", "text": "把目标、背景、约束、输出格式说清楚"},
+        {"key": "C", "text": "尽量少给任何上下文"},
+        {"key": "D", "text": "默认 AI 知道你的真实意图"}
+      ],
+      "answer": "B",
+      "explanation": "好提示词的核心是任务表达清晰。",
+      "score": 3,
+      "tags": ["prompt"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "FINAL-004",
+      "type": "single_choice",
+      "prompt": "下面哪项最符合人、AI、工具三者的合理分工？",
+      "options": [
+        {"key": "A", "text": "AI 负责最终责任判断"},
+        {"key": "B", "text": "工具负责价值判断"},
+        {"key": "C", "text": "人负责目标和判断，AI 负责生成整理，工具负责执行和验证"},
+        {"key": "D", "text": "人只负责点按钮"}
+      ],
+      "answer": "C",
+      "explanation": "责任和边界判断不能外包给模型。",
+      "score": 3,
+      "tags": ["collaboration", "roles"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "FINAL-005",
+      "type": "single_choice",
+      "prompt": "如果你要理解并修改本地仓库中的一处小逻辑，哪类工具通常最合适？",
+      "options": [
+        {"key": "A", "text": "AI Coding 工具"},
+        {"key": "B", "text": "纯图片生成工具"},
+        {"key": "C", "text": "音乐生成工具"},
+        {"key": "D", "text": "只做 PDF 摘要的工具"}
+      ],
+      "answer": "A",
+      "explanation": "这类任务需要代码理解、文件定位和命令执行能力。",
+      "score": 3,
+      "tags": ["coding", "tools"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "FINAL-006",
+      "type": "single_choice",
+      "prompt": "最小改动原则的主要价值是什么？",
+      "options": [
+        {"key": "A", "text": "让代码看起来更复杂"},
+        {"key": "B", "text": "减少范围失控，便于验证和回滚"},
+        {"key": "C", "text": "避免写测试"},
+        {"key": "D", "text": "让 AI 更开心"}
+      ],
+      "answer": "B",
+      "explanation": "范围越小，验证越清楚，风险越低。",
+      "score": 3,
+      "tags": ["minimal-change", "verification"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "FINAL-007",
+      "type": "single_choice",
+      "prompt": "prompt 和 skill 的区别，最准确的是哪项？",
+      "options": [
+        {"key": "A", "text": "skill 更像稳定流程模板"},
+        {"key": "B", "text": "prompt 只能口语写"},
+        {"key": "C", "text": "skill 不需要输入"},
+        {"key": "D", "text": "两者完全相同"}
+      ],
+      "answer": "A",
+      "explanation": "skill 适合重复动作，prompt 更偏单次任务。",
+      "score": 3,
+      "tags": ["skill", "prompt"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "FINAL-008",
+      "type": "single_choice",
+      "prompt": "下面哪项最接近“学习闭环”中的复盘动作？",
+      "options": [
+        {"key": "A", "text": "只收藏资料"},
+        {"key": "B", "text": "分析错题、误判原因和下一步补练"},
+        {"key": "C", "text": "只看答案不写记录"},
+        {"key": "D", "text": "跳过不会的题"}
+      ],
+      "answer": "B",
+      "explanation": "复盘的价值在于找出误判路径和补练重点。",
+      "score": 3,
+      "tags": ["review", "learning-workflow"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "FINAL-009",
+      "type": "single_choice",
+      "prompt": "下面哪项最符合本课程的网络安全边界？",
+      "options": [
+        {"key": "A", "text": "学习时可以顺便测试陌生系统"},
+        {"key": "B", "text": "重点学习授权、日志、补丁、资产和配置"},
+        {"key": "C", "text": "重点是写攻击工具"},
+        {"key": "D", "text": "先会利用，再谈边界"}
+      ],
+      "answer": "B",
+      "explanation": "课程只覆盖防守视角和合规边界。",
+      "score": 3,
+      "tags": ["security", "boundaries"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "FINAL-010",
+      "type": "single_choice",
+      "prompt": "DNS 最像下面哪项？",
+      "options": [
+        {"key": "A", "text": "一个把域名翻译成地址的通讯录"},
+        {"key": "B", "text": "一个代码仓库"},
+        {"key": "C", "text": "一个文本编辑器"},
+        {"key": "D", "text": "一个漏洞库"}
+      ],
+      "answer": "A",
+      "explanation": "DNS 负责把人可读的域名映射到 IP 地址。",
+      "score": 3,
+      "tags": ["networking", "dns"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "FINAL-011",
+      "type": "true_false",
+      "prompt": "AI 输出得很有条理，就可以视为已经验证通过。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": false,
+      "explanation": "表达质量不能替代验证动作。",
+      "score": 3,
+      "tags": ["verification", "misconception"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "FINAL-012",
+      "type": "true_false",
+      "prompt": "AI Search 类能力比纯 Chat 更适合处理需要最新来源的信息。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": true,
+      "explanation": "因为它更强调检索和来源定位。",
+      "score": 3,
+      "tags": ["search", "latest-info"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "FINAL-013",
+      "type": "true_false",
+      "prompt": "元提示词可以规定 AI 先提出澄清问题再输出结果。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": true,
+      "explanation": "这是元提示词的典型作用。",
+      "score": 3,
+      "tags": ["meta-prompt"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "FINAL-014",
+      "type": "true_false",
+      "prompt": "对新人来说，终端和 Git 的基础认知对 AI Coding 没什么帮助。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": false,
+      "explanation": "这些基础直接关系到执行、查看差异和验证。",
+      "score": 3,
+      "tags": ["git", "terminal", "coding"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "FINAL-015",
+      "type": "true_false",
+      "prompt": "学习安全主题时，只要目的是研究，就可以忽略授权问题。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": false,
+      "explanation": "授权是前提，研究目的不能替代许可。",
+      "score": 3,
+      "tags": ["security", "authorization", "boundaries"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "FINAL-016",
+      "type": "true_false",
+      "prompt": "收藏很多学习资料，但没有练习和复盘，通常不算形成学习闭环。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": true,
+      "explanation": "闭环要包含输出、测试和复盘。",
+      "score": 3,
+      "tags": ["learning-workflow", "misconception"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "FINAL-017",
+      "type": "short_answer",
+      "prompt": "用 3 句话以内解释 AI Chat、AI Search、Agent 三者的区别。",
+      "answer": [
+        "AI Chat 侧重对话解释和多轮协作",
+        "AI Search 侧重检索资料和来源",
+        "Agent 侧重围绕目标分步骤执行并可能调用工具"
+      ],
+      "explanation": "答题要体现三者的任务重心不同。",
+      "score": 5,
+      "tags": ["tools", "agent", "search"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "FINAL-018",
+      "type": "short_answer",
+      "prompt": "写出一个稳定学习型提示词至少应包含的 4 个元素。",
+      "answer": [
+        "目标",
+        "当前水平或背景",
+        "约束",
+        "输出格式",
+        "时间预算"
+      ],
+      "explanation": "核心是任务结构，不是句式花样。",
+      "score": 5,
+      "tags": ["prompt", "structure"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "FINAL-019",
+      "type": "short_answer",
+      "prompt": "为什么说“能运行”不等于“结果正确”？请给出一个验证动作。",
+      "answer": [
+        "程序可能运行成功但逻辑结果错误",
+        "还需要对关键输入输出与预期进行比对",
+        "或运行测试、检查 diff、人工复查关键逻辑"
+      ],
+      "explanation": "运行不报错只是最低条件。",
+      "score": 5,
+      "tags": ["verification", "coding"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "FINAL-020",
+      "type": "short_answer",
+      "prompt": "解释 prompt 和 skill 的区别，并写一个适合做成 skill 的学习任务例子。",
+      "answer": [
+        "prompt 偏单次任务指令，skill 偏可复用流程模板",
+        "适合做成 skill 的任务如生成学习计划、出题评分、周复盘等"
+      ],
+      "explanation": "既要区分概念，也要举可复用场景。",
+      "score": 5,
+      "tags": ["skill", "learning-workflow"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "FINAL-021",
+      "type": "short_answer",
+      "prompt": "用快递系统类比说明域名、DNS、IP、端口四者的作用。",
+      "answer": [
+        "域名像收件人名字",
+        "DNS 像通讯录或查号台",
+        "IP 像门牌地址",
+        "端口像具体房间号或窗口号"
+      ],
+      "explanation": "类比正确即可，不要求措辞完全一致。",
+      "score": 5,
+      "tags": ["networking", "dns", "port"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "FINAL-022",
+      "type": "short_answer",
+      "prompt": "写出 3 个学习安全基础时必须优先建立的边界或防守视角。",
+      "answer": [
+        "授权意识",
+        "资产清单意识",
+        "日志和告警意识",
+        "补丁与配置管理意识",
+        "最小权限意识"
+      ],
+      "explanation": "课程只接受防守和合规视角。",
+      "score": 5,
+      "tags": ["security", "defense", "boundaries"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "FINAL-023",
+      "type": "short_answer",
+      "prompt": "什么是“收藏代替学习”？请给出一个替代动作。",
+      "answer": [
+        "只存资料不做理解、练习、测试和复盘",
+        "替代动作如写总结、做题、自测、复述给别人听"
+      ],
+      "explanation": "题目考查学习闭环意识。",
+      "score": 5,
+      "tags": ["misconception", "review"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "FINAL-024",
+      "type": "scenario",
+      "prompt": "你让 AI 帮你学“网络通信基础”，它直接开始讲一堆高阶协议细节。你会怎样改写任务，让它更适合新人？",
+      "answer": [
+        "说明自己是新人和时间预算",
+        "要求先讲核心概念和类比",
+        "先覆盖域名、DNS、IP、端口、HTTP 请求响应",
+        "附上最小例子和自测题"
+      ],
+      "explanation": "关键是把学习任务重新拉回基础地图层。",
+      "score": 5,
+      "tags": ["prompt", "networking", "learning"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "FINAL-025",
+      "type": "scenario",
+      "prompt": "你让 AI 给一个脚本加一项小功能，但它顺手重构了多个模块。你会怎么处理？",
+      "answer": [
+        "检查 diff 确认范围是否溢出",
+        "要求退回到最小改动方案",
+        "重申验收条件",
+        "验证目标功能和回归风险"
+      ],
+      "explanation": "题目考查最小改动和风险控制。",
+      "score": 5,
+      "tags": ["coding", "minimal-change", "diff"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "FINAL-026",
+      "type": "scenario",
+      "prompt": "你做完一组题后发现很多错题不是不会，而是没看清条件。你会如何回炉？",
+      "answer": [
+        "把错误归类为上下文不足",
+        "重读题干并标出条件",
+        "重做相似题",
+        "答题前增加条件核对清单"
+      ],
+      "explanation": "错题回炉要先找错因，再补动作。",
+      "score": 5,
+      "tags": ["review", "remediation", "context"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "FINAL-027",
+      "type": "scenario",
+      "prompt": "同事说：‘AI 都会了，我们以后不用学 Git 和命令行。’请给出一个简短回应。",
+      "answer": [
+        "Git 和命令行是理解、执行和验证的基础",
+        "没有这些基础就很难检查 AI 到底改了什么",
+        "效率工具不能替代基本控制能力"
+      ],
+      "explanation": "题目考查基础能力在 AI 协作中的位置。",
+      "score": 5,
+      "tags": ["git", "terminal", "verification"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "FINAL-028",
+      "type": "scenario",
+      "prompt": "有人建议你‘为了练手’去试试未授权系统有没有漏洞。你应该如何回应，并给出一个合规替代方案？",
+      "answer": [
+        "明确拒绝未授权测试",
+        "指出授权是前提",
+        "建议改为学习概念、防守案例、日志分析或合法实验环境"
+      ],
+      "explanation": "边界和授权意识必须明确。",
+      "score": 5,
+      "tags": ["security", "authorization", "boundaries"],
+      "difficulty": "hard"
+    },
+    {
+      "id": "FINAL-029",
+      "type": "scenario",
+      "prompt": "你想把‘学一个陌生技术主题’做成自己的固定流程。请给出一个 5 步学习闭环。",
+      "answer": [
+        "收集资料",
+        "拆知识点并理解",
+        "做最小练习",
+        "自测或做题",
+        "复盘并安排回炉"
+      ],
+      "explanation": "答案应体现完整闭环，而不是只有输入。",
+      "score": 5,
+      "tags": ["learning-workflow", "skill"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "FINAL-030",
+      "type": "scenario",
+      "prompt": "请给出一个你会长期保留的‘使用 AI 前检查清单’，至少包含 4 项。",
+      "answer": [
+        "目标是否清楚",
+        "上下文是否足够",
+        "边界是否明确",
+        "输出格式是否定义",
+        "验证动作是否准备好"
+      ],
+      "explanation": "题目考查把课程方法沉淀成个人工作清单的能力。",
+      "score": 5,
+      "tags": ["prompt", "verification", "workflow"],
+      "difficulty": "medium"
+    }
+  ]
+}

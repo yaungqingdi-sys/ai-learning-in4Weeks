@@ -1,0 +1,313 @@
+{
+  "quiz_id": "week-4",
+  "title": "第4周测验：学习系统、网络基础与安全边界",
+  "description": "覆盖学习闭环、skill、网络通信基础、安全防守与边界意识。",
+  "passing_percent": 80,
+  "questions": [
+    {
+      "id": "W4-001",
+      "type": "single_choice",
+      "prompt": "下面哪条最接近“学习闭环”的基本顺序？",
+      "options": [
+        {"key": "A", "text": "收藏资料 -> 结束"},
+        {"key": "B", "text": "资料 -> 理解 -> 练习 -> 测试 -> 复盘"},
+        {"key": "C", "text": "提问 -> 复制答案 -> 结束"},
+        {"key": "D", "text": "刷工具 -> 不做记录"}
+      ],
+      "answer": "B",
+      "explanation": "闭环的关键是有练习、测试和复盘，不是只做输入。",
+      "score": 3,
+      "tags": ["learning-workflow", "definition"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W4-002",
+      "type": "single_choice",
+      "prompt": "prompt 和 skill 的关键区别更接近哪项？",
+      "options": [
+        {"key": "A", "text": "prompt 用中文，skill 只能用英文"},
+        {"key": "B", "text": "skill 是更稳定、可复用的流程模板"},
+        {"key": "C", "text": "prompt 不需要目标"},
+        {"key": "D", "text": "两者完全无区别"}
+      ],
+      "answer": "B",
+      "explanation": "skill 更像 SOP，适合重复流程。",
+      "score": 3,
+      "tags": ["skill", "prompt"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W4-003",
+      "type": "single_choice",
+      "prompt": "DNS 的作用最准确的是哪项？",
+      "options": [
+        {"key": "A", "text": "把域名翻译成 IP"},
+        {"key": "B", "text": "替代 HTTP"},
+        {"key": "C", "text": "自动修复网站漏洞"},
+        {"key": "D", "text": "生成网页样式"}
+      ],
+      "answer": "A",
+      "explanation": "DNS 是域名到地址的映射系统。",
+      "score": 3,
+      "tags": ["networking", "dns"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W4-004",
+      "type": "single_choice",
+      "prompt": "端口可以用什么类比来理解？",
+      "options": [
+        {"key": "A", "text": "一整栋楼"},
+        {"key": "B", "text": "楼里的某个房间号"},
+        {"key": "C", "text": "网络本身"},
+        {"key": "D", "text": "浏览器标签页"}
+      ],
+      "answer": "B",
+      "explanation": "端口是设备上某个服务的入口编号。",
+      "score": 3,
+      "tags": ["networking", "port"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W4-005",
+      "type": "single_choice",
+      "prompt": "下面哪项最符合本课程中的安全基础视角？",
+      "options": [
+        {"key": "A", "text": "重点是学习如何未授权测试别人的系统"},
+        {"key": "B", "text": "重点是资产、日志、补丁、配置、权限和授权意识"},
+        {"key": "C", "text": "重点是写攻击脚本"},
+        {"key": "D", "text": "重点是绕过边界"}
+      ],
+      "answer": "B",
+      "explanation": "课程只覆盖防守视角和合规边界。",
+      "score": 3,
+      "tags": ["security", "boundaries"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W4-006",
+      "type": "single_choice",
+      "prompt": "下面哪项最能体现“收藏代替学习”的问题？",
+      "options": [
+        {"key": "A", "text": "看完资料后做了自测"},
+        {"key": "B", "text": "把十几篇文章存起来，但没有解释、练习和复盘"},
+        {"key": "C", "text": "给自己整理了错题单"},
+        {"key": "D", "text": "根据资料生成了复习卡片"}
+      ],
+      "answer": "B",
+      "explanation": "只有输入、没有输出和检验，不构成真正学习。",
+      "score": 3,
+      "tags": ["misconception", "learning-workflow"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W4-007",
+      "type": "single_choice",
+      "prompt": "HTTP 请求 / 响应最像下面哪种关系？",
+      "options": [
+        {"key": "A", "text": "一问一答"},
+        {"key": "B", "text": "一张静态图片"},
+        {"key": "C", "text": "一个数据库表"},
+        {"key": "D", "text": "一台电脑本身"}
+      ],
+      "answer": "A",
+      "explanation": "请求和响应是典型的交互模型。",
+      "score": 3,
+      "tags": ["networking", "http"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W4-008",
+      "type": "single_choice",
+      "prompt": "下列哪项最适合作为学习新主题时的复盘动作？",
+      "options": [
+        {"key": "A", "text": "只保存原文链接"},
+        {"key": "B", "text": "写下今天最清楚的一点和最模糊的一点"},
+        {"key": "C", "text": "只看一遍 AI 答案"},
+        {"key": "D", "text": "跳过错题"}
+      ],
+      "answer": "B",
+      "explanation": "复盘的核心是暴露理解状态，而不是重复输入。",
+      "score": 3,
+      "tags": ["review", "learning-workflow"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W4-009",
+      "type": "true_false",
+      "prompt": "skill 通常比一次性 prompt 更适合重复性流程任务。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": true,
+      "explanation": "因为 skill 会把流程和输出结构固化下来。",
+      "score": 3,
+      "tags": ["skill", "workflow"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W4-010",
+      "type": "true_false",
+      "prompt": "域名、DNS、IP、端口可以看成网络通信中的不同路标。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": true,
+      "explanation": "它们在定位和通信流程中各自负责不同环节。",
+      "score": 3,
+      "tags": ["networking"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W4-011",
+      "type": "true_false",
+      "prompt": "只要目的是学习，未经授权测试别人的系统也没关系。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": false,
+      "explanation": "授权是安全学习的前提，目的不能替代许可。",
+      "score": 3,
+      "tags": ["security", "authorization", "boundaries"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W4-012",
+      "type": "true_false",
+      "prompt": "做错题复盘时，除了看正确答案，还应该分析自己为什么会错。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": true,
+      "explanation": "不分析误判路径，回炉效果会很差。",
+      "score": 3,
+      "tags": ["review", "remediation"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W4-013",
+      "type": "short_answer",
+      "prompt": "用自己的话解释 prompt 和 skill 的区别。",
+      "answer": [
+        "prompt 更像一次性指令",
+        "skill 更像稳定的流程模板或 SOP",
+        "skill 更适合重复任务和固定输出结构"
+      ],
+      "explanation": "关键是区分一次性和可复用流程。",
+      "score": 5,
+      "tags": ["skill", "prompt"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W4-014",
+      "type": "short_answer",
+      "prompt": "解释域名、DNS、IP、端口在一次访问网页时分别扮演什么角色。",
+      "answer": [
+        "域名是人容易记的名字",
+        "DNS 负责把域名翻译成 IP",
+        "IP 是设备地址",
+        "端口是设备上具体服务的入口编号"
+      ],
+      "explanation": "答题应体现角色分工和顺序感。",
+      "score": 5,
+      "tags": ["networking", "dns", "port"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W4-015",
+      "type": "short_answer",
+      "prompt": "写出 3 个安全基础主题里应优先建立的防守视角概念。",
+      "answer": [
+        "资产",
+        "日志",
+        "补丁",
+        "权限",
+        "配置",
+        "授权"
+      ],
+      "explanation": "课程强调的是守边界和防守，而不是攻击动作。",
+      "score": 5,
+      "tags": ["security", "defense"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W4-016",
+      "type": "short_answer",
+      "prompt": "什么叫“收藏代替学习”？请写一个你会用来纠正它的动作。",
+      "answer": [
+        "指只保存资料不做理解、练习、测试和复盘",
+        "纠正动作可以是写总结、做题、自测、讲给别人听等"
+      ],
+      "explanation": "关键是从被动收集转向主动加工。",
+      "score": 5,
+      "tags": ["misconception", "review"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W4-017",
+      "type": "scenario",
+      "prompt": "你想把“学一个技术主题”的流程做成 skill。请给出最少 4 个你会固定的输入或步骤。",
+      "answer": [
+        "主题",
+        "当前水平",
+        "时间预算",
+        "知识点拆解",
+        "练习和小测",
+        "验证和复盘"
+      ],
+      "explanation": "题目考查把学习动作固化成流程的能力。",
+      "score": 5,
+      "tags": ["skill", "learning-workflow"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W4-018",
+      "type": "scenario",
+      "prompt": "你在学网络通信，AI 一上来开始讲复杂协议细节。作为新人，你会怎样把学习重新拉回“先懂地图”的状态？",
+      "answer": [
+        "要求先解释核心概念和角色分工",
+        "先讲域名、DNS、IP、端口、请求响应这些路标",
+        "要求用类比和最小流程图说明",
+        "暂时不展开高阶细节"
+      ],
+      "explanation": "新人先建地图，再补细节，更容易稳定。",
+      "score": 5,
+      "tags": ["networking", "learning", "prompt"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W4-019",
+      "type": "scenario",
+      "prompt": "有人让你“顺手看看某公司内网有没有问题，就当学习”。你应该如何回应？",
+      "answer": [
+        "明确拒绝未授权测试",
+        "说明学习目的不能替代授权",
+        "建议改为学习概念、防守案例或合法实验环境",
+        "强调边界和合规要求"
+      ],
+      "explanation": "这题考的是授权意识和安全边界。",
+      "score": 5,
+      "tags": ["security", "authorization", "boundaries"],
+      "difficulty": "hard"
+    },
+    {
+      "id": "W4-020",
+      "type": "scenario",
+      "prompt": "你做完一次小测，发现自己总在“没有验证就相信 AI”。请写一个 24 小时内可执行的回炉动作列表。",
+      "answer": [
+        "挑 2 到 3 道错题重做",
+        "给每道题增加验证步骤",
+        "写下自己当时为什么直接相信",
+        "形成下次答题前的验证清单"
+      ],
+      "explanation": "回炉不只是再看答案，而是补验证习惯。",
+      "score": 5,
+      "tags": ["review", "verification", "remediation"],
+      "difficulty": "medium"
+    }
+  ]
+}

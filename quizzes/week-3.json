@@ -1,0 +1,308 @@
+{
+  "quiz_id": "week-3",
+  "title": "第3周测验：AI Coding 基础与验证",
+  "description": "覆盖终端、Git、代码理解、最小改动与验证。",
+  "passing_percent": 80,
+  "questions": [
+    {
+      "id": "W3-001",
+      "type": "single_choice",
+      "prompt": "terminal 在这里指的是什么？",
+      "options": [
+        {"key": "A", "text": "只显示图片的窗口"},
+        {"key": "B", "text": "用文字命令和系统交互的界面"},
+        {"key": "C", "text": "代码托管网站"},
+        {"key": "D", "text": "自动测试框架"}
+      ],
+      "answer": "B",
+      "explanation": "终端是执行命令和查看输出的入口之一。",
+      "score": 3,
+      "tags": ["terminal", "definition"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W3-002",
+      "type": "single_choice",
+      "prompt": "Git 最核心的价值之一是什么？",
+      "options": [
+        {"key": "A", "text": "自动修复所有 bug"},
+        {"key": "B", "text": "记录改动历史并支持比较差异"},
+        {"key": "C", "text": "替代操作系统"},
+        {"key": "D", "text": "只用于下载文件"}
+      ],
+      "answer": "B",
+      "explanation": "Git 的核心在于记录和协作，而不是自动写代码。",
+      "score": 3,
+      "tags": ["git", "definition"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W3-003",
+      "type": "single_choice",
+      "prompt": "如果你要看 AI 到底改了什么，最应该先看什么？",
+      "options": [
+        {"key": "A", "text": "彩色主题"},
+        {"key": "B", "text": "改动说明里的形容词"},
+        {"key": "C", "text": "diff 或文件差异"},
+        {"key": "D", "text": "提交时间"}
+      ],
+      "answer": "C",
+      "explanation": "diff 能直接显示实际改动内容和范围。",
+      "score": 3,
+      "tags": ["git", "diff", "verification"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W3-004",
+      "type": "single_choice",
+      "prompt": "下面哪项最符合“最小改动原则”？",
+      "options": [
+        {"key": "A", "text": "一次改多个模块，顺便一起优化"},
+        {"key": "B", "text": "只改实现当前目标必需的那一小块"},
+        {"key": "C", "text": "先重构再看是否解决问题"},
+        {"key": "D", "text": "把所有旧代码都换成 AI 新写的版本"}
+      ],
+      "answer": "B",
+      "explanation": "最小改动有助于降低风险并提升验证效率。",
+      "score": 3,
+      "tags": ["minimal-change", "workflow"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W3-005",
+      "type": "single_choice",
+      "prompt": "AI 帮你解释代码时，最稳妥的用法是什么？",
+      "options": [
+        {"key": "A", "text": "默认它知道所有未给出的文件"},
+        {"key": "B", "text": "要求区分已知信息和推测信息"},
+        {"key": "C", "text": "禁止它提出不确定点"},
+        {"key": "D", "text": "直接让它不看代码就重写"}
+      ],
+      "answer": "B",
+      "explanation": "代码理解里最怕把猜测说成事实。",
+      "score": 3,
+      "tags": ["code-understanding", "verification"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W3-006",
+      "type": "single_choice",
+      "prompt": "下面哪项最适合作为小功能修改前的验收条件？",
+      "options": [
+        {"key": "A", "text": "感觉差不多就行"},
+        {"key": "B", "text": "输出内容、输入条件和预期结果可被检查"},
+        {"key": "C", "text": "AI 说没问题"},
+        {"key": "D", "text": "代码行数变多"}
+      ],
+      "answer": "B",
+      "explanation": "验收条件必须具体、可检查。",
+      "score": 3,
+      "tags": ["verification", "acceptance"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W3-007",
+      "type": "single_choice",
+      "prompt": "下面哪项更像“验证代码结果”，而不是“只看表面能跑”？",
+      "options": [
+        {"key": "A", "text": "脚本执行后没有报错"},
+        {"key": "B", "text": "对关键输入输出做检查并与预期对比"},
+        {"key": "C", "text": "界面颜色变了"},
+        {"key": "D", "text": "AI 解释很自信"}
+      ],
+      "answer": "B",
+      "explanation": "真正的验证要对结果做检查，而不是只看有没有报错。",
+      "score": 3,
+      "tags": ["verification", "testing"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W3-008",
+      "type": "single_choice",
+      "prompt": "如果你只是想先搞清楚一个项目入口在哪，最合适的第一步是什么？",
+      "options": [
+        {"key": "A", "text": "先让 AI 重构整个项目"},
+        {"key": "B", "text": "先让 AI 概述项目用途和关键文件，再自己核对"},
+        {"key": "C", "text": "先部署到线上"},
+        {"key": "D", "text": "删除暂时看不懂的文件"}
+      ],
+      "answer": "B",
+      "explanation": "理解优先于改动，这是 AI Coding 的基本节奏。",
+      "score": 3,
+      "tags": ["code-understanding", "workflow"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W3-009",
+      "type": "true_false",
+      "prompt": "只要脚本能运行，就说明逻辑一定正确。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": false,
+      "explanation": "运行成功只是最低条件，不代表结果符合需求。",
+      "score": 3,
+      "tags": ["verification", "misconception"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W3-010",
+      "type": "true_false",
+      "prompt": "看 diff 有助于发现 AI 修改是否超出预期范围。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": true,
+      "explanation": "diff 是检查修改范围最直接的手段之一。",
+      "score": 3,
+      "tags": ["git", "diff"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W3-011",
+      "type": "true_false",
+      "prompt": "看不懂项目也没关系，直接让 AI 一次性改完通常更快。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": false,
+      "explanation": "不理解结构直接大改，风险和返工都更高。",
+      "score": 3,
+      "tags": ["code-understanding", "risk"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W3-012",
+      "type": "true_false",
+      "prompt": "AI Coding 工具能提高效率，但不意味着你可以跳过 Git 和基本命令。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": true,
+      "explanation": "基础工具知识能帮助你验证和控制改动。",
+      "score": 3,
+      "tags": ["git", "terminal", "coding"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W3-013",
+      "type": "short_answer",
+      "prompt": "用大白话解释 terminal、路径、目录三者之间的关系。",
+      "answer": [
+        "terminal 是输入命令的地方",
+        "路径表示文件或目录所在位置",
+        "目录是文件夹，是路径指向的组织单位之一"
+      ],
+      "explanation": "重点是三者分工，不要求术语完全一致。",
+      "score": 5,
+      "tags": ["terminal", "filesystem"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W3-014",
+      "type": "short_answer",
+      "prompt": "为什么让 AI 改代码之前，先理解入口文件和关键数据流会更稳？",
+      "answer": [
+        "能减少误改无关位置",
+        "有助于限定改动范围",
+        "更容易设计验证点",
+        "能区分已知和未知"
+      ],
+      "explanation": "题目考察的是流程意识和风险控制。",
+      "score": 5,
+      "tags": ["code-understanding", "minimal-change"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W3-015",
+      "type": "short_answer",
+      "prompt": "列出 3 个你会用来验证 AI 代码输出的动作。",
+      "answer": [
+        "运行已有测试或最小样例",
+        "检查关键输入输出是否符合预期",
+        "查看 diff 是否只改了目标范围",
+        "人工复读关键逻辑"
+      ],
+      "explanation": "验证动作应覆盖结果和范围，不只看能不能跑。",
+      "score": 5,
+      "tags": ["verification", "testing"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W3-016",
+      "type": "short_answer",
+      "prompt": "什么叫“最小改动”？请给出一个你认可的判断标准。",
+      "answer": [
+        "只改完成当前目标所需的最小范围",
+        "例如只改一个文件或一个函数",
+        "并且有明确验收和回归检查"
+      ],
+      "explanation": "最小改动强调范围控制和可验证性。",
+      "score": 5,
+      "tags": ["minimal-change", "workflow"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W3-017",
+      "type": "scenario",
+      "prompt": "你让 AI 给一个脚本加参数支持。它顺手改了 5 个文件，还重命名了目录。你会怎么处理？",
+      "answer": [
+        "先检查 diff 和改动范围",
+        "判断是否超出需求",
+        "要求收缩为最小改动版本",
+        "重新定义验收条件后再验证"
+      ],
+      "explanation": "题目考察对改动溢出的警惕。",
+      "score": 5,
+      "tags": ["minimal-change", "diff", "risk"],
+      "difficulty": "hard"
+    },
+    {
+      "id": "W3-018",
+      "type": "scenario",
+      "prompt": "你拿到一个陌生仓库，只知道“脚本跑错了”。你会让 AI 先做哪 3 件事？",
+      "answer": [
+        "概述项目用途和关键文件",
+        "定位可能的入口和错误相关位置",
+        "区分已知事实和推测，并提出最小排查步骤"
+      ],
+      "explanation": "先建地图，再找问题点，是更稳的排查顺序。",
+      "score": 5,
+      "tags": ["code-understanding", "debugging"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W3-019",
+      "type": "scenario",
+      "prompt": "你改完一个小功能后没有现成测试。此时最小可行的验证方案是什么？",
+      "answer": [
+        "设计 2 到 3 个关键输入输出样例",
+        "运行脚本并记录实际结果",
+        "与预期逐项对比",
+        "保留 diff 供复查"
+      ],
+      "explanation": "没有正式测试时，也要做可重复的最小检查。",
+      "score": 5,
+      "tags": ["verification", "testing"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W3-020",
+      "type": "scenario",
+      "prompt": "同事说“AI 写代码比你快，所以你不用学命令行和 Git”。你会如何反驳？",
+      "answer": [
+        "说明命令行和 Git 是理解、执行和验证的基础",
+        "没有这些基础就难以检查 AI 改了什么",
+        "速度不能替代可控性和可追溯性"
+      ],
+      "explanation": "题目考查的是基础能力与 AI 效率工具之间的关系。",
+      "score": 5,
+      "tags": ["git", "terminal", "verification"],
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "scores": {
+    "FINAL-017": {"score": 5, "comment": "区分准确。"},
+    "FINAL-018": {"score": 5, "comment": "结构完整。"},
+    "FINAL-019": {"score": 5, "comment": "有验证动作。"},
+    "FINAL-020": {"score": 4, "comment": "例子合理，但可再补 skill 的边界说明。"},
+    "FINAL-021": {"score": 5, "comment": "类比清楚。"},
+    "FINAL-022": {"score": 4, "comment": "防守视角提到了，但可再补配置或最小权限。"},
+    "FINAL-023": {"score": 5, "comment": "纠正动作明确。"},
+    "FINAL-024": {"score": 5, "comment": "能拉回新人视角。"},
+    "FINAL-025": {"score": 5, "comment": "最小改动思路明确。"},
+    "FINAL-026": {"score": 4, "comment": "回炉动作正确，可再补 24 小时内重做。"},
+    "FINAL-027": {"score": 5, "comment": "回应抓住了验证和控制。"},
+    "FINAL-028": {"score": 5, "comment": "边界和替代方案都对。"},
+    "FINAL-029": {"score": 4, "comment": "闭环完整，可再补知识点拆解。"},
+    "FINAL-030": {"score": 5, "comment": "检查项完整。"}
+  }
+}

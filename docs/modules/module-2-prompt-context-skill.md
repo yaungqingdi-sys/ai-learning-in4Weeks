@@ -1,0 +1,70 @@
+# 模块 2：提示词、上下文与协作
+
+## 学习目标
+
+- 理解提示词工程、上下文和元提示词的作用。
+- 学会写出结构稳定的学习型提示词。
+- 知道人、机器、工具如何分工。
+
+## 核心概念
+
+- 提示词工程：不是“神秘咒语”，而是把任务说清楚的工程化写法。
+- 上下文：模型作答时能看到的背景信息，包括目标、资料、限制和历史对话。
+- 元提示词：用来约束 AI 工作方式的提示词，比如要求它先澄清再输出。
+- 协作链路：人负责目标和判断，AI 负责生成和整理，工具负责执行和验证。
+
+## 用大白话解释
+
+你给 AI 发消息，像给一个临时加入项目的人布置任务。只说“帮我搞一下”通常不够，因为它不知道：
+
+- 你真正想要什么
+- 你已经知道什么
+- 哪些内容不能碰
+- 最终交付长什么样
+
+所以一个好提示词，至少像一张任务卡：你是谁、你要做什么、参考什么、不能做什么、最后怎么交付。
+
+## 常见误区
+
+- 误区 1：提示词越长越好。
+- 误区 2：只要加一个“你是专家”，答案就会更专业。
+- 误区 3：AI 答偏了，是模型笨，不是上下文缺了。
+- 误区 4：有了模板，以后不用思考任务边界。
+
+## 最小练习
+
+把下面一句模糊请求改写成结构化提示词：
+
+“帮我学会网络基础。”
+
+要求包含：
+
+- 目标
+- 当前水平
+- 时间限制
+- 输出格式
+- 不要涉及的内容
+
+## 推荐追问
+
+- “我这个提示词里缺的不是信息量，而是哪类关键信息？”
+- “什么时候应该补资料，什么时候应该让 AI 先提问？”
+- “如何要求 AI 在回答里标出不确定点？”
+
+## 小结
+
+提示词不是魔法，核心是任务建模。上下文越完整，输出越稳；边界越明确，偏航越少；格式越稳定，越适合重复使用。
+
+## 参考阅读
+
+- OpenAI Prompting 指南：https://developers.openai.com/api/docs/guides/prompting
+- OpenAI Prompt Engineering：https://developers.openai.com/api/docs/guides/prompt-engineering
+- Google AI Studio Quickstart：https://ai.google.dev/gemini-api/docs/ai-studio-quickstart
+- 课程内提示词模板：
+  - `../../templates/study-plan-prompt.md`
+  - `../../templates/concept-learning-prompt.md`
+  - `../../templates/project-understanding-prompt.md`
+  - `../../templates/review-and-remediation-prompt.md`
+- 人机协作案例可对照：
+  - `./module-4-ai-coding-basics.md`
+  - `../../docs/weeks/week-2.md`

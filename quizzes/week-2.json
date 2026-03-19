@@ -1,0 +1,313 @@
+{
+  "quiz_id": "week-2",
+  "title": "第2周测验：提示词、上下文与学习协作",
+  "description": "覆盖提示词结构、上下文、元提示词与人机协作。",
+  "passing_percent": 80,
+  "questions": [
+    {
+      "id": "W2-001",
+      "type": "single_choice",
+      "prompt": "下面哪项最接近“提示词工程”的合理理解？",
+      "options": [
+        {"key": "A", "text": "收集神秘句式，让模型自动变聪明"},
+        {"key": "B", "text": "把任务目标、上下文、约束和输出说清楚"},
+        {"key": "C", "text": "只要写得足够长就行"},
+        {"key": "D", "text": "专门用来欺骗模型"}
+      ],
+      "answer": "B",
+      "explanation": "提示词工程的本质是任务建模和表达清晰。",
+      "score": 3,
+      "tags": ["prompt", "definition"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W2-002",
+      "type": "single_choice",
+      "prompt": "下面哪项通常不属于一个学习型提示词的核心组成？",
+      "options": [
+        {"key": "A", "text": "目标"},
+        {"key": "B", "text": "当前水平"},
+        {"key": "C", "text": "输出格式"},
+        {"key": "D", "text": "随机夸奖模型的句子"}
+      ],
+      "answer": "D",
+      "explanation": "夸奖模型不是关键信息，目标和约束才是。",
+      "score": 3,
+      "tags": ["prompt", "structure"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W2-003",
+      "type": "single_choice",
+      "prompt": "“上下文”在这里最准确的理解是什么？",
+      "options": [
+        {"key": "A", "text": "只有系统提示词才算上下文"},
+        {"key": "B", "text": "模型回答时可见的背景信息和限制"},
+        {"key": "C", "text": "只有聊天历史才算上下文"},
+        {"key": "D", "text": "和任务无关的附加描述"}
+      ],
+      "answer": "B",
+      "explanation": "上下文不仅包括历史，还包括资料、限制、目标等。",
+      "score": 3,
+      "tags": ["context", "definition"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W2-004",
+      "type": "single_choice",
+      "prompt": "元提示词最常用于做什么？",
+      "options": [
+        {"key": "A", "text": "规定 AI 的工作方式和步骤"},
+        {"key": "B", "text": "替代所有业务内容"},
+        {"key": "C", "text": "隐藏用户需求"},
+        {"key": "D", "text": "取消输出格式要求"}
+      ],
+      "answer": "A",
+      "explanation": "元提示词是对工作方式的约束，如先澄清、再输出。",
+      "score": 3,
+      "tags": ["meta-prompt", "workflow"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W2-005",
+      "type": "single_choice",
+      "prompt": "如果 AI 总是答偏，下面哪种处理最优先？",
+      "options": [
+        {"key": "A", "text": "默认认为模型坏了"},
+        {"key": "B", "text": "补充任务背景、目标和限制"},
+        {"key": "C", "text": "删掉所有上下文"},
+        {"key": "D", "text": "换成更长但更模糊的问题"}
+      ],
+      "answer": "B",
+      "explanation": "很多答偏不是模型不会，而是你没给够任务信息。",
+      "score": 3,
+      "tags": ["context", "prompt"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W2-006",
+      "type": "single_choice",
+      "prompt": "下面哪项更像“人、AI、工具”的合理分工？",
+      "options": [
+        {"key": "A", "text": "人不需要判断，全部交给 AI"},
+        {"key": "B", "text": "AI 负责最终责任承担"},
+        {"key": "C", "text": "人定目标和判断，AI 负责生成整理，工具负责执行验证"},
+        {"key": "D", "text": "工具只负责美化输出"}
+      ],
+      "answer": "C",
+      "explanation": "判断和责任不能完全外包给模型。",
+      "score": 3,
+      "tags": ["collaboration", "roles"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W2-007",
+      "type": "single_choice",
+      "prompt": "如果你要求 AI 输出“表格 + 3 条建议 + 1 条风险提醒”，这属于哪类信息？",
+      "options": [
+        {"key": "A", "text": "输出格式要求"},
+        {"key": "B", "text": "无关背景"},
+        {"key": "C", "text": "模型参数"},
+        {"key": "D", "text": "外部来源"}
+      ],
+      "answer": "A",
+      "explanation": "输出结构会显著影响答案可用性。",
+      "score": 3,
+      "tags": ["prompt", "output-format"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W2-008",
+      "type": "single_choice",
+      "prompt": "学习一个陌生概念时，哪种提问方式更稳？",
+      "options": [
+        {"key": "A", "text": "直接让 AI 一次讲完所有高级知识"},
+        {"key": "B", "text": "先要定义、类比、最小例子，再逐步追问"},
+        {"key": "C", "text": "只要最终答案，不要解释"},
+        {"key": "D", "text": "跳过自测题，节省时间"}
+      ],
+      "answer": "B",
+      "explanation": "新人学习更适合分层解释和逐步追问。",
+      "score": 3,
+      "tags": ["learning", "prompt"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W2-009",
+      "type": "true_false",
+      "prompt": "提示词越长，效果一定越好。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": false,
+      "explanation": "重点是信息是否关键和结构是否清楚，不是单纯长度。",
+      "score": 3,
+      "tags": ["prompt", "misconception"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W2-010",
+      "type": "true_false",
+      "prompt": "上下文不仅包括聊天历史，也包括任务目标、资料和限制。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": true,
+      "explanation": "上下文是一切会影响回答的背景信息集合。",
+      "score": 3,
+      "tags": ["context"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W2-011",
+      "type": "true_false",
+      "prompt": "元提示词可以规定 AI 先提问再回答。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": true,
+      "explanation": "这正是元提示词的典型用途。",
+      "score": 3,
+      "tags": ["meta-prompt"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W2-012",
+      "type": "true_false",
+      "prompt": "只要 AI 给出答案，人就不需要再判断任务是否越界。",
+      "options": [
+        {"key": "T", "text": "正确"},
+        {"key": "F", "text": "错误"}
+      ],
+      "answer": false,
+      "explanation": "边界判断和责任承担仍在使用者这边。",
+      "score": 3,
+      "tags": ["boundaries", "collaboration"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "W2-013",
+      "type": "short_answer",
+      "prompt": "写出一个稳定学习型提示词至少应该包含的 4 个元素。",
+      "answer": [
+        "目标",
+        "当前水平或背景",
+        "约束或不要涉及的内容",
+        "输出格式",
+        "时间预算或使用场景"
+      ],
+      "explanation": "题目考查提示词的任务结构，而不是句式。",
+      "score": 5,
+      "tags": ["prompt", "structure"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W2-014",
+      "type": "short_answer",
+      "prompt": "用自己的话解释“上下文不足”为什么会让答案看起来像对但其实不对题。",
+      "answer": [
+        "模型会按已有少量信息猜测任务",
+        "缺少背景会导致范围、深度或边界判断错误",
+        "因此可能表达流畅但没有命中真正需求"
+      ],
+      "explanation": "关键是指出“猜测补全”和“目标偏移”。",
+      "score": 5,
+      "tags": ["context", "misconception"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W2-015",
+      "type": "short_answer",
+      "prompt": "什么是元提示词？请给出一个你会使用它的场景。",
+      "answer": [
+        "元提示词是约束 AI 工作方式的提示词",
+        "例如要求 AI 先提问、标出不确定点、再按固定格式输出",
+        "可用于学习规划、代码审查、资料总结等"
+      ],
+      "explanation": "既要给出定义，也要说明使用场景。",
+      "score": 5,
+      "tags": ["meta-prompt", "workflow"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W2-016",
+      "type": "short_answer",
+      "prompt": "分别写一句话说明在人机协作里，人、AI、工具各自更适合负责什么。",
+      "answer": [
+        "人负责目标、边界、判断和最终责任",
+        "AI 负责生成、整理、解释和候选方案",
+        "工具负责执行、存储、检索和验证"
+      ],
+      "explanation": "分工清楚，协作才稳定。",
+      "score": 5,
+      "tags": ["collaboration", "roles"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W2-017",
+      "type": "scenario",
+      "prompt": "你让 AI“帮我学网络基础”，结果它一次抛出一大堆高阶名词。请说明你会怎样重写提示词。",
+      "answer": [
+        "补充自己是新人和时间预算",
+        "要求先讲基础定义和类比",
+        "限制输出层级，不要一上来展开高阶内容",
+        "要求附带最小例子和自测题"
+      ],
+      "explanation": "题目考查把模糊任务改造成可执行学习计划的能力。",
+      "score": 5,
+      "tags": ["prompt", "learning", "context"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W2-018",
+      "type": "scenario",
+      "prompt": "你在学一个新概念，AI 回答里用了很多你没见过的词。此时更合理的下一步是什么？",
+      "answer": [
+        "要求它解释术语并降低层级",
+        "让它先给一句话定义和大白话版本",
+        "再补最小例子或类比",
+        "必要时让它先问你当前基础"
+      ],
+      "explanation": "不是盲目追更多内容，而是先补理解底座。",
+      "score": 5,
+      "tags": ["learning", "prompt"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W2-019",
+      "type": "scenario",
+      "prompt": "同事想把所有判断都外包给 AI，包括“这个请求是否合规”。你会如何纠正这种做法？",
+      "answer": [
+        "说明 AI 可以辅助解释规则但不能替代责任判断",
+        "强调合规和边界需要人确认",
+        "建议让 AI 给出依据、风险点和待确认项",
+        "最终由有责任的人做决定"
+      ],
+      "explanation": "考查的是协作边界而不是工具功能。",
+      "score": 5,
+      "tags": ["boundaries", "collaboration", "risk"],
+      "difficulty": "hard"
+    },
+    {
+      "id": "W2-020",
+      "type": "scenario",
+      "prompt": "你准备把“学习一个新主题”的流程固化成模板。请写出至少 4 个你会固定下来的步骤或字段。",
+      "answer": [
+        "目标",
+        "当前水平",
+        "时间预算",
+        "知识点拆解",
+        "练习或题目",
+        "验证与复盘",
+        "输出格式"
+      ],
+      "explanation": "题目考查从一次性提示词过渡到稳定流程模板的能力。",
+      "score": 5,
+      "tags": ["skill", "learning-workflow"],
+      "difficulty": "medium"
+    }
+  ]
+}
