@@ -2,6 +2,9 @@
 
 这是一套面向“会一点 AI，但不系统”的新人的训练手册。目标不是把学习者变成研究员，而是让学习者形成一条稳定的学习闭环：知道 AI 是什么，知道怎么和 AI 协作，能用 AI 帮自己理解知识和改小工具，并能通过题库、评分和复盘持续迭代。
 
+
+![NETVIA](card_light_v5.png)
+
 课程总目标：
 
 1. 说清楚 AI 是什么，不是什么。
@@ -34,6 +37,7 @@
   - [模块 6：常见误区与边界](docs/modules/module-6-misconceptions-and-boundaries/常见误区与边界.md)
   - [模块 7：Vibe Coding 范式](docs/modules/module-7-vibe-coding/VibeCoding范式.md)
   - [模块 8：使用 Gemini 绘制系统架构图](docs/modules/module-8-gemini-architecture-diagrams/使用Gemini绘制系统架构图.md)
+  - [模块 9：使用 Gemini 与 Codex 生成可控 PPT](docs/modules/module-9-gemini-codex-editable-ppt/使用Gemini与Codex生成可控PPT.md)
 - 课程考核
   - [考核与回炉机制](docs/assessment-policy.md)
   - `quizzes/`
@@ -98,4 +102,3 @@ make test
 - 一套围绕理解、练习、测试、复盘的题库和考核规则。
 - 一套强调验证、复盘与边界意识的学习框架。
 
-![NETVIA](card_light_v5.png)

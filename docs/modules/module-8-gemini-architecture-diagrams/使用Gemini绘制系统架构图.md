@@ -21,7 +21,7 @@
 如果你更习惯从流程角度看，也可以把它理解成下面这条链路：
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[用户描述系统目标] --> B[Gemini追问关键缺口]
     B --> C[多轮澄清需求]
     C --> D[ASCII结构草图]

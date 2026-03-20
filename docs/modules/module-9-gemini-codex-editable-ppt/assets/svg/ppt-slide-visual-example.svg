@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Visual SVG example for a PPT slide</title>
+  <desc id="desc">A 16 by 9 slide showing a title banner, a problem card, a steps card, and a bottom result callout.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f4ec"/>
+      <stop offset="100%" stop-color="#eee4d6"/>
+    </linearGradient>
+    <linearGradient id="titleBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#163256"/>
+      <stop offset="100%" stop-color="#224d84"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f28c38"/>
+      <stop offset="100%" stop-color="#f4b162"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#1d2a3d" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1400" cy="130" r="180" fill="#fff2dd" opacity="0.8"/>
+  <circle cx="180" cy="760" r="220" fill="#e6eef8" opacity="0.9"/>
+
+  <rect x="90" y="78" width="1420" height="108" rx="28" fill="url(#titleBar)" filter="url(#shadow)"/>
+  <rect x="112" y="102" width="14" height="60" rx="7" fill="url(#accent)"/>
+  <text x="152" y="135" fill="#ffffff" font-family="'Avenir Next', 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700">CASE EXAMPLE</text>
+  <text x="152" y="168" fill="#d7e4f6" font-family="'Avenir Next', 'Segoe UI', Arial, sans-serif" font-size="42" font-weight="700">Weekly Report with AI</text>
+
+  <rect x="90" y="230" width="650" height="420" rx="30" fill="#fffaf3" stroke="#d7c6ac" stroke-width="3" filter="url(#shadow)"/>
+  <text x="132" y="288" fill="#173356" font-family="'Avenir Next', 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700">Problem Context</text>
+  <rect x="132" y="314" width="92" height="8" rx="4" fill="#f28c38"/>
+  <text x="132" y="372" fill="#2f3d4f" font-family="'Avenir Next', 'Segoe UI', Arial, sans-serif" font-size="28">Manual summary every week</text>
+  <text x="132" y="424" fill="#2f3d4f" font-family="'Avenir Next', 'Segoe UI', Arial, sans-serif" font-size="28">Repeated formatting work</text>
+  <text x="132" y="476" fill="#2f3d4f" font-family="'Avenir Next', 'Segoe UI', Arial, sans-serif" font-size="28">No stable review checklist</text>
+  <rect x="132" y="528" width="220" height="44" rx="22" fill="#e9f1fb"/>
+  <text x="162" y="557" fill="#204a7d" font-family="'Avenir Next', 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="700">User pain stays visible</text>
+
+  <rect x="780" y="230" width="730" height="420" rx="30" fill="#fcfbf8" stroke="#d2dcea" stroke-width="3" filter="url(#shadow)"/>
+  <text x="822" y="288" fill="#173356" font-family="'Avenir Next', 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700">Steps</text>
+  <rect x="822" y="314" width="72" height="8" rx="4" fill="#f28c38"/>
+
+  <circle cx="846" cy="382" r="22" fill="#173356"/>
+  <text x="839" y="391" fill="#ffffff" font-family="'Avenir Next', 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="700">1</text>
+  <text x="886" y="392" fill="#2f3d4f" font-family="'Avenir Next', 'Segoe UI', Arial, sans-serif" font-size="28">Collect notes from the week</text>
+
+  <circle cx="846" cy="456" r="22" fill="#173356"/>
+  <text x="839" y="465" fill="#ffffff" font-family="'Avenir Next', 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="700">2</text>
+  <text x="886" y="466" fill="#2f3d4f" font-family="'Avenir Next', 'Segoe UI', Arial, sans-serif" font-size="28">Ask AI for a first draft</text>
+
+  <circle cx="846" cy="530" r="22" fill="#173356"/>
+  <text x="839" y="539" fill="#ffffff" font-family="'Avenir Next', 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="700">3</text>
+  <text x="886" y="540" fill="#2f3d4f" font-family="'Avenir Next', 'Segoe UI', Arial, sans-serif" font-size="28">Human review against checklist</text>
+
+  <circle cx="846" cy="604" r="22" fill="#173356"/>
+  <text x="839" y="613" fill="#ffffff" font-family="'Avenir Next', 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="700">4</text>
+  <text x="886" y="614" fill="#2f3d4f" font-family="'Avenir Next', 'Segoe UI', Arial, sans-serif" font-size="28">Polish and send</text>
+
+  <rect x="90" y="700" width="1420" height="120" rx="28" fill="#173356" filter="url(#shadow)"/>
+  <text x="132" y="752" fill="#f5c17c" font-family="'Avenir Next', 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700">Key Result</text>
+  <text x="132" y="796" fill="#ffffff" font-family="'Avenir Next', 'Segoe UI', Arial, sans-serif" font-size="34" font-weight="700">AI speeds up the first draft, but final responsibility still stays with the user.</text>
+</svg>

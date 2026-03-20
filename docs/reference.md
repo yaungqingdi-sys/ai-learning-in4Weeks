@@ -8,6 +8,7 @@
 - OpenAI Prompt Engineering：https://developers.openai.com/api/docs/guides/prompt-engineering
 - OpenAI Agent Builder：https://developers.openai.com/api/docs/guides/agent-builder
 - OpenAI Agents SDK：https://openai.github.io/openai-agents-python/
+- Gemini Prompt design strategies：https://ai.google.dev/guide/prompt_best_practices
 
 ## AI 工具与工作台
 
@@ -20,6 +21,11 @@
 - OpenRouter API：https://openrouter.ai/docs
 - LMSYS Chatbot Arena：https://chat.lmsys.org/
 - Gemini 模型总览：https://ai.google.dev/models/gemini
+
+## SVG 与 PPT
+
+- SVG 2 官方规范：https://www.w3.org/TR/SVG2/
+- python-pptx GitHub 仓库：https://github.com/scanny/python-pptx
 
 ## AI Coding 与 Git
 

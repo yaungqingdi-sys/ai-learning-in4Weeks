@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">ASCII layout example for a PPT slide</title>
+  <desc id="desc">A terminal-like mockup showing title, two columns, and a bottom result area.</desc>
+  <rect width="1600" height="900" fill="#f7f0e6"/>
+  <rect x="70" y="70" width="1460" height="760" rx="28" fill="#162234"/>
+  <rect x="110" y="120" width="1380" height="80" rx="16" fill="#21324b"/>
+  <text x="150" y="170" fill="#f8f3ea" font-family="Menlo, Monaco, Consolas, monospace" font-size="30">+--------------------------------------------------------------+</text>
+  <text x="150" y="216" fill="#ffcf70" font-family="Menlo, Monaco, Consolas, monospace" font-size="28">| Case: Weekly Report with AI                                  |</text>
+  <text x="150" y="262" fill="#f8f3ea" font-family="Menlo, Monaco, Consolas, monospace" font-size="30">+--------------------------+-----------------------------------+</text>
+
+  <text x="150" y="320" fill="#78d1c7" font-family="Menlo, Monaco, Consolas, monospace" font-size="28">| Problem context          | Steps                             |</text>
+  <text x="150" y="372" fill="#f8f3ea" font-family="Menlo, Monaco, Consolas, monospace" font-size="26">| - Manual summary         | 1. Collect notes                  |</text>
+  <text x="150" y="420" fill="#f8f3ea" font-family="Menlo, Monaco, Consolas, monospace" font-size="26">| - Repeated formatting    | 2. Ask AI for draft               |</text>
+  <text x="150" y="468" fill="#f8f3ea" font-family="Menlo, Monaco, Consolas, monospace" font-size="26">| - No review checklist    | 3. Human review                   |</text>
+  <text x="150" y="516" fill="#f8f3ea" font-family="Menlo, Monaco, Consolas, monospace" font-size="26">|                          | 4. Final polish                   |</text>
+
+  <text x="150" y="578" fill="#f8f3ea" font-family="Menlo, Monaco, Consolas, monospace" font-size="30">+--------------------------+-----------------------------------+</text>
+  <text x="150" y="636" fill="#78d1c7" font-family="Menlo, Monaco, Consolas, monospace" font-size="28">| Key result                                                   |</text>
+  <text x="150" y="688" fill="#f8f3ea" font-family="Menlo, Monaco, Consolas, monospace" font-size="26">| - Faster first draft, but review still stays with the user   |</text>
+  <text x="150" y="746" fill="#f8f3ea" font-family="Menlo, Monaco, Consolas, monospace" font-size="30">+--------------------------------------------------------------+</text>
+
+  <text x="1260" y="790" fill="#8aa0bf" font-family="Menlo, Monaco, Consolas, monospace" font-size="24">ASCII stage: check layout only</text>
+</svg>
