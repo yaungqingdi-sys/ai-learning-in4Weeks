@@ -1,6 +1,6 @@
 {
   "quiz_id": "week-1",
-  "title": "第1周测验：AI基础与工具地图",
+  "title": "阶段测验 1：AI基础与工具地图",
   "description": "覆盖 AI 基础概念、工具分工、任务判断与验证意识。",
   "passing_percent": 80,
   "questions": [

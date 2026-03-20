@@ -1,7 +1,7 @@
 {
   "quiz_id": "final-exam",
   "title": "期末综合测试：新人快速理解 AI",
-  "description": "综合考查 AI 基础、提示词协作、AI Coding、学习闭环、网络与安全边界。",
+  "description": "综合考查 AI 基础、提示词协作、AI Coding、学习闭环、误区边界与 Vibe Coding。",
   "passing_percent": 80,
   "questions": [
     {
@@ -103,17 +103,17 @@
     {
       "id": "FINAL-007",
       "type": "single_choice",
-      "prompt": "prompt 和 skill 的区别，最准确的是哪项？",
+      "prompt": "一次性 Prompt 和流程模板的区别，最准确的是哪项？",
       "options": [
-        {"key": "A", "text": "skill 更像稳定流程模板"},
+        {"key": "A", "text": "流程模板更像稳定流程结构"},
         {"key": "B", "text": "prompt 只能口语写"},
-        {"key": "C", "text": "skill 不需要输入"},
+        {"key": "C", "text": "流程模板不需要输入"},
         {"key": "D", "text": "两者完全相同"}
       ],
       "answer": "A",
-      "explanation": "skill 适合重复动作，prompt 更偏单次任务。",
+      "explanation": "流程模板适合重复动作，Prompt 更偏单次任务。",
       "score": 3,
-      "tags": ["skill", "prompt"],
+      "tags": ["workflow-template", "prompt"],
       "difficulty": "easy"
     },
     {
@@ -135,33 +135,33 @@
     {
       "id": "FINAL-009",
       "type": "single_choice",
-      "prompt": "下面哪项最符合本课程的网络安全边界？",
+      "prompt": "下面哪项最符合本课程里的边界意识？",
       "options": [
-        {"key": "A", "text": "学习时可以顺便测试陌生系统"},
-        {"key": "B", "text": "重点学习授权、日志、补丁、资产和配置"},
-        {"key": "C", "text": "重点是写攻击工具"},
-        {"key": "D", "text": "先会利用，再谈边界"}
+        {"key": "A", "text": "只要 AI 说得自信，就可以直接采用"},
+        {"key": "B", "text": "人负责目标、范围、验收和最终责任"},
+        {"key": "C", "text": "边界问题只在大项目里才需要考虑"},
+        {"key": "D", "text": "先让 AI 做完，再补目标"}
       ],
       "answer": "B",
-      "explanation": "课程只覆盖防守视角和合规边界。",
+      "explanation": "课程强调责任边界和任务边界不能完全外包。",
       "score": 3,
-      "tags": ["security", "boundaries"],
+      "tags": ["boundaries", "collaboration"],
       "difficulty": "easy"
     },
     {
       "id": "FINAL-010",
       "type": "single_choice",
-      "prompt": "DNS 最像下面哪项？",
+      "prompt": "Memory Bank 最像下面哪项？",
       "options": [
-        {"key": "A", "text": "一个把域名翻译成地址的通讯录"},
-        {"key": "B", "text": "一个代码仓库"},
-        {"key": "C", "text": "一个文本编辑器"},
-        {"key": "D", "text": "一个漏洞库"}
+        {"key": "A", "text": "一组持续更新的项目上下文文档"},
+        {"key": "B", "text": "一个自动修复 bug 的模型"},
+        {"key": "C", "text": "一个替代 Git 的平台"},
+        {"key": "D", "text": "一个随机聊天记录集合"}
       ],
       "answer": "A",
-      "explanation": "DNS 负责把人可读的域名映射到 IP 地址。",
+      "explanation": "Memory Bank 的重点是让上下文跨会话保持连续。",
       "score": 3,
-      "tags": ["networking", "dns"],
+      "tags": ["vibe-coding", "context"],
       "difficulty": "easy"
     },
     {
@@ -223,15 +223,15 @@
     {
       "id": "FINAL-015",
       "type": "true_false",
-      "prompt": "学习安全主题时，只要目的是研究，就可以忽略授权问题。",
+      "prompt": "只要 AI 回答得很完整，就可以跳过验证动作。",
       "options": [
         {"key": "T", "text": "正确"},
         {"key": "F", "text": "错误"}
       ],
       "answer": false,
-      "explanation": "授权是前提，研究目的不能替代许可。",
+      "explanation": "回答完整不等于结果可靠，验证动作不能省。",
       "score": 3,
-      "tags": ["security", "authorization", "boundaries"],
+      "tags": ["verification", "misconception"],
       "difficulty": "easy"
     },
     {
@@ -295,45 +295,43 @@
     {
       "id": "FINAL-020",
       "type": "short_answer",
-      "prompt": "解释 prompt 和 skill 的区别，并写一个适合做成 skill 的学习任务例子。",
+      "prompt": "解释一次性 Prompt 和流程模板的区别，并写一个适合做成流程模板的学习任务例子。",
       "answer": [
-        "prompt 偏单次任务指令，skill 偏可复用流程模板",
-        "适合做成 skill 的任务如生成学习计划、出题评分、周复盘等"
+        "Prompt 偏单次任务指令，流程模板偏可复用步骤结构",
+        "适合做成流程模板的任务如生成学习计划、出题评分、错题回炉等"
       ],
       "explanation": "既要区分概念，也要举可复用场景。",
       "score": 5,
-      "tags": ["skill", "learning-workflow"],
+      "tags": ["workflow-template", "learning-workflow"],
       "difficulty": "medium"
     },
     {
       "id": "FINAL-021",
       "type": "short_answer",
-      "prompt": "用快递系统类比说明域名、DNS、IP、端口四者的作用。",
+      "prompt": "用自己的话说明什么叫“收藏代替学习”，并给出一个替代动作。",
       "answer": [
-        "域名像收件人名字",
-        "DNS 像通讯录或查号台",
-        "IP 像门牌地址",
-        "端口像具体房间号或窗口号"
+        "只存资料不做理解、练习、测试和复盘",
+        "替代动作可以是写总结、做题、自测、讲给别人听"
       ],
-      "explanation": "类比正确即可，不要求措辞完全一致。",
+      "explanation": "题目考查的是主动加工，而不是被动囤积。",
       "score": 5,
-      "tags": ["networking", "dns", "port"],
+      "tags": ["misconception", "review"],
       "difficulty": "medium"
     },
     {
       "id": "FINAL-022",
       "type": "short_answer",
-      "prompt": "写出 3 个学习安全基础时必须优先建立的边界或防守视角。",
+      "prompt": "写出 3 个你会放进“使用 AI 前检查清单”的项目。",
       "answer": [
-        "授权意识",
-        "资产清单意识",
-        "日志和告警意识",
-        "补丁与配置管理意识",
-        "最小权限意识"
+        "目标是否清楚",
+        "上下文是否足够",
+        "边界是否明确",
+        "输出格式是否定义",
+        "验证动作是否准备好"
       ],
-      "explanation": "课程只接受防守和合规视角。",
+      "explanation": "检查清单要能落到执行前动作，而不是空泛口号。",
       "score": 5,
-      "tags": ["security", "defense", "boundaries"],
+      "tags": ["boundaries", "verification"],
       "difficulty": "medium"
     },
     {
@@ -352,16 +350,16 @@
     {
       "id": "FINAL-024",
       "type": "scenario",
-      "prompt": "你让 AI 帮你学“网络通信基础”，它直接开始讲一堆高阶协议细节。你会怎样改写任务，让它更适合新人？",
+      "prompt": "你让 AI 帮你学“Git 基础”，它直接开始讲一堆高阶内部机制。你会怎样改写任务，让它更适合新人？",
       "answer": [
         "说明自己是新人和时间预算",
         "要求先讲核心概念和类比",
-        "先覆盖域名、DNS、IP、端口、HTTP 请求响应",
+        "先覆盖 commit、branch、diff、pull 这些基础路标",
         "附上最小例子和自测题"
       ],
-      "explanation": "关键是把学习任务重新拉回基础地图层。",
+      "explanation": "关键是把学习任务拉回基础地图，而不是一开始就钻深层细节。",
       "score": 5,
-      "tags": ["prompt", "networking", "learning"],
+      "tags": ["prompt", "learning", "context"],
       "difficulty": "medium"
     },
     {
@@ -411,15 +409,15 @@
     {
       "id": "FINAL-028",
       "type": "scenario",
-      "prompt": "有人建议你‘为了练手’去试试未授权系统有没有漏洞。你应该如何回应，并给出一个合规替代方案？",
+      "prompt": "有人建议你‘让 AI 先把整个项目重写一遍，再慢慢看’。你应该如何回应，并给出一个更稳的替代方案？",
       "answer": [
-        "明确拒绝未授权测试",
-        "指出授权是前提",
-        "建议改为学习概念、防守案例、日志分析或合法实验环境"
+        "说明这种做法容易失控并失去验证抓手",
+        "建议先限定一个小目标和验收条件",
+        "要求 AI 先读上下文、给计划、再做最小改动"
       ],
-      "explanation": "边界和授权意识必须明确。",
+      "explanation": "题目考查的是范围控制和先对齐再执行。",
       "score": 5,
-      "tags": ["security", "authorization", "boundaries"],
+      "tags": ["minimal-change", "vibe-coding", "verification"],
       "difficulty": "hard"
     },
     {
@@ -435,7 +433,7 @@
       ],
       "explanation": "答案应体现完整闭环，而不是只有输入。",
       "score": 5,
-      "tags": ["learning-workflow", "skill"],
+      "tags": ["learning-workflow", "workflow-template"],
       "difficulty": "medium"
     },
     {

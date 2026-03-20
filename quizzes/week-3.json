@@ -1,6 +1,6 @@
 {
   "quiz_id": "week-3",
-  "title": "第3周测验：AI Coding 基础与验证",
+  "title": "阶段测验 3：AI Coding 基础与验证",
   "description": "覆盖终端、Git、代码理解、最小改动与验证。",
   "passing_percent": 80,
   "questions": [

@@ -1,0 +1,95 @@
+<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="450" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#2c3e50">学习系统构建</text>
+  <text x="450" y="65" text-anchor="middle" font-family="Arial" font-size="14" fill="#7f8c8d">从一次性Prompt到可复用流程模板</text>
+  
+  <!-- 学习闭环 -->
+  <g transform="translate(450, 250)">
+    <!-- 圆环背景 -->
+    <circle cx="0" cy="0" r="150" fill="none" stroke="#bdc3c7" stroke-width="2" stroke-dasharray="5,5"/>
+    
+    <!-- 学习步骤 -->
+    <!-- 资料 -->
+    <g transform="translate(0, -150)">
+      <rect x="-60" y="-25" width="120" height="50" rx="8" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">资料</text>
+    </g>
+    
+    <!-- 理解 -->
+    <g transform="translate(142, -46)">
+      <rect x="-60" y="-25" width="120" height="50" rx="8" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">理解</text>
+    </g>
+    
+    <!-- 练习 -->
+    <g transform="translate(142, 46)">
+      <rect x="-60" y="-25" width="120" height="50" rx="8" fill="#f39c12" stroke="#d35400" stroke-width="2"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">练习</text>
+    </g>
+    
+    <!-- 测试 -->
+    <g transform="translate(0, 150)">
+      <rect x="-60" y="-25" width="120" height="50" rx="8" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">测试</text>
+    </g>
+    
+    <!-- 复盘 -->
+    <g transform="translate(-142, 46)">
+      <rect x="-60" y="-25" width="120" height="50" rx="8" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">复盘</text>
+    </g>
+    
+    <!-- 连接箭头 -->
+    <g fill="none" stroke="#2c3e50" stroke-width="2">
+      <!-- 资料 -> 理解 -->
+      <path d="M 60 -150 Q 100 -150 100 -96"/>
+      <!-- 理解 -> 练习 -->
+      <path d="M 142 -21 Q 160 0 142 21"/>
+      <!-- 练习 -> 测试 -->
+      <path d="M 82 46 Q 0 100 -60 125"/>
+      <!-- 测试 -> 复盘 -->
+      <path d="M -60 125 Q -160 100 -142 71"/>
+      <!-- 复盘 -> 资料 -->
+      <path d="M -142 21 Q -100 -100 0 -150"/>
+    </g>
+  </g>
+  
+  <!-- Prompt vs 流程模板对比 -->
+  <g transform="translate(200, 500)">
+    <rect x="-80" y="-25" width="160" height="50" rx="5" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+    <text x="0" y="-5" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">Prompt</text>
+    <text x="0" y="15" text-anchor="middle" font-family="Arial" font-size="12" fill="white">一次性指令</text>
+  </g>
+  
+  <g transform="translate(450, 500)">
+    <rect x="-80" y="-25" width="160" height="50" rx="5" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+    <text x="0" y="-5" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">流程模板</text>
+    <text x="0" y="15" text-anchor="middle" font-family="Arial" font-size="12" fill="white">可复用SOP</text>
+  </g>
+  
+  <g transform="translate(700, 500)">
+    <rect x="-80" y="-25" width="160" height="50" rx="5" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+    <text x="0" y="-5" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">Rubric</text>
+    <text x="0" y="15" text-anchor="middle" font-family="Arial" font-size="12" fill="white">评分标准</text>
+  </g>
+  
+  <!-- 连接线 -->
+  <g stroke="#7f8c8d" stroke-width="1" stroke-dasharray="3,3">
+    <line x1="200" y1="475" x2="200" y2="400"/>
+    <line x1="450" y1="475" x2="450" y2="400"/>
+    <line x1="700" y1="475" x2="700" y2="400"/>
+  </g>
+  
+  <!-- 关键点 -->
+  <g transform="translate(450, 400)">
+    <text x="0" y="0" text-anchor="middle" font-family="Arial" font-size="14" fill="#2c3e50">流程一旦稳定，后面只是持续迭代细节</text>
+  </g>
+  
+  <!-- 注释 -->
+  <g transform="translate(450, 580)">
+    <text x="0" y="0" text-anchor="middle" font-family="Arial" font-size="12" fill="#7f8c8d">学习系统 = 可验证的流程 + 可复用的模板</text>
+  </g>
+</svg>

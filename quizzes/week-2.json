@@ -1,6 +1,6 @@
 {
   "quiz_id": "week-2",
-  "title": "第2周测验：提示词、上下文与学习协作",
+  "title": "阶段测验 2：提示词、上下文与学习协作",
   "description": "覆盖提示词结构、上下文、元提示词与人机协作。",
   "passing_percent": 80,
   "questions": [
@@ -249,7 +249,7 @@
     {
       "id": "W2-017",
       "type": "scenario",
-      "prompt": "你让 AI“帮我学网络基础”，结果它一次抛出一大堆高阶名词。请说明你会怎样重写提示词。",
+      "prompt": "你让 AI“帮我学 Git 基础”，结果它一次抛出一大堆高阶名词。请说明你会怎样重写提示词。",
       "answer": [
         "补充自己是新人和时间预算",
         "要求先讲基础定义和类比",
@@ -306,7 +306,7 @@
       ],
       "explanation": "题目考查从一次性提示词过渡到稳定流程模板的能力。",
       "score": 5,
-      "tags": ["skill", "learning-workflow"],
+      "tags": ["workflow-template", "learning-workflow"],
       "difficulty": "medium"
     }
   ]

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+  <title id="title">学习 Prompt 使用流程图</title>
+  <desc id="desc">展示如何从判断当前卡点开始，选择合适 Prompt 模板，补齐信息，执行对话，再根据结果迭代 Prompt。</desc>
+  <defs>
+    <style>
+      .bg { fill: #f6f8fc; }
+      .card { fill: #ffffff; stroke: #d6deea; stroke-width: 2; rx: 20; }
+      .accent { fill: #ebf2ff; stroke: #7ca3ff; stroke-width: 2; rx: 20; }
+      .support { fill: #eef8f1; stroke: #86bf9a; stroke-width: 2; rx: 20; }
+      .line { stroke: #65758f; stroke-width: 3; fill: none; }
+      .title { font: 700 28px 'Helvetica Neue', Arial, sans-serif; fill: #213045; }
+      .label { font: 700 20px 'Helvetica Neue', Arial, sans-serif; fill: #243247; }
+      .sub { font: 400 14px 'Helvetica Neue', Arial, sans-serif; fill: #5a6880; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#65758f"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1280" height="420"/>
+  <text class="title" x="56" y="56">学习 Prompt 的更稳用法，不是直接问，而是先选对模板再补齐信息</text>
+
+  <rect class="accent" x="56" y="120" width="200" height="120" rx="20"/>
+  <text class="label" x="95" y="165">先判断卡点</text>
+  <text class="sub" x="88" y="194">是学概念、拆计划、</text>
+  <text class="sub" x="90" y="216">看项目、出题，还是回炉</text>
+
+  <rect class="card" x="300" y="120" width="210" height="120" rx="20"/>
+  <text class="label" x="340" y="165">选对应模板</text>
+  <text class="sub" x="328" y="194">concept / study plan /</text>
+  <text class="sub" x="324" y="216">project / review / quiz</text>
+
+  <rect class="card" x="554" y="120" width="220" height="120" rx="20"/>
+  <text class="label" x="587" y="165">补齐关键信息</text>
+  <text class="sub" x="586" y="194">主题、当前水平、时间、</text>
+  <text class="sub" x="591" y="216">输出格式、边界要求</text>
+
+  <rect class="support" x="818" y="120" width="190" height="120" rx="20"/>
+  <text class="label" x="858" y="165">执行对话</text>
+  <text class="sub" x="852" y="194">让模型先解释、</text>
+  <text class="sub" x="848" y="216">提问、拆任务或出题</text>
+
+  <rect class="card" x="1052" y="120" width="172" height="120" rx="20"/>
+  <text class="label" x="1082" y="165">检查结果</text>
+  <text class="sub" x="1070" y="194">是否具体、可执行、</text>
+  <text class="sub" x="1083" y="216">可验证、够贴题</text>
+
+  <path class="line" d="M256 180 H300" marker-end="url(#arrow)"/>
+  <path class="line" d="M510 180 H554" marker-end="url(#arrow)"/>
+  <path class="line" d="M774 180 H818" marker-end="url(#arrow)"/>
+  <path class="line" d="M1008 180 H1052" marker-end="url(#arrow)"/>
+
+  <path class="line" d="M1138 240 C1138 318, 664 330, 664 260" marker-end="url(#arrow)"/>
+  <text class="sub" x="730" y="344">结果太泛、太深或不贴题时，回到“补齐关键信息”继续迭代，不要急着换模板</text>
+</svg>

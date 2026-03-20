@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Gemini architecture diagram workflow</title>
+  <desc id="desc">A light themed workflow showing the steps from user description to Gemini clarification, ASCII sketch, style confirmation, SVG generation, and preview.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7f8fc; }
+      .card { fill: #ffffff; stroke: #cfd7e6; stroke-width: 2; rx: 18; }
+      .line { stroke: #5c6b8a; stroke-width: 3; fill: none; }
+      .accent { fill: #e8f0ff; stroke: #7aa2ff; stroke-width: 2; rx: 18; }
+      .title { font: 700 28px 'Helvetica Neue', Arial, sans-serif; fill: #1e2a3b; }
+      .label { font: 600 18px 'Helvetica Neue', Arial, sans-serif; fill: #243247; }
+      .sub { font: 400 14px 'Helvetica Neue', Arial, sans-serif; fill: #5a6880; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5c6b8a"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="360"/>
+  <text class="title" x="60" y="56">Google AI Studio 中从需求澄清到 SVG 预览的工作流</text>
+
+  <rect class="accent" x="60" y="110" width="150" height="100" rx="18"/>
+  <text class="label" x="92" y="150">用户描述系统</text>
+  <text class="sub" x="88" y="178">先说目标、边界</text>
+
+  <rect class="card" x="250" y="110" width="150" height="100" rx="18"/>
+  <text class="label" x="283" y="150">Gemini 追问</text>
+  <text class="sub" x="284" y="178">补齐缺口信息</text>
+
+  <rect class="card" x="440" y="110" width="150" height="100" rx="18"/>
+  <text class="label" x="474" y="150">ASCII 草图</text>
+  <text class="sub" x="470" y="178">先确认结构</text>
+
+  <rect class="card" x="630" y="110" width="150" height="100" rx="18"/>
+  <text class="label" x="662" y="150">风格确认</text>
+  <text class="sub" x="652" y="178">浅色 / 深色 / 配色</text>
+
+  <rect class="accent" x="820" y="110" width="150" height="100" rx="18"/>
+  <text class="label" x="856" y="150">生成 SVG</text>
+  <text class="sub" x="854" y="178">输出可编辑代码</text>
+
+  <rect class="card" x="1010" y="110" width="150" height="100" rx="18"/>
+  <text class="label" x="1048" y="150">Preview</text>
+  <text class="sub" x="1030" y="178">可视确认结果</text>
+
+  <path class="line" d="M210 160 H250" marker-end="url(#arrow)"/>
+  <path class="line" d="M400 160 H440" marker-end="url(#arrow)"/>
+  <path class="line" d="M590 160 H630" marker-end="url(#arrow)"/>
+  <path class="line" d="M780 160 H820" marker-end="url(#arrow)"/>
+  <path class="line" d="M970 160 H1010" marker-end="url(#arrow)"/>
+
+  <path class="line" d="M515 220 C515 280, 325 280, 325 220" marker-end="url(#arrow)"/>
+  <text class="sub" x="330" y="302">结构不对就回到追问和草图，不急着出最终图</text>
+</svg>

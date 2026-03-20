@@ -1,0 +1,86 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="#f5f7fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#2c3e50">AI Coding 工作流程</text>
+  <text x="400" y="65" text-anchor="middle" font-family="Arial" font-size="14" fill="#7f8c8d">理解 -> 改动 -> 验证 -> 复查 的闭环流程</text>
+  
+  <!-- 定义箭头 -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c"/>
+    </marker>
+  </defs>
+  
+  <!-- 理解阶段 -->
+  <g transform="translate(400, 150)">
+    <rect x="-80" y="-40" width="160" height="80" rx="10" fill="#3498db" stroke="#2980b9" stroke-width="3"/>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="white">理解</text>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="12" fill="white">1. 让AI解释项目</text>
+    <text x="0" y="25" text-anchor="middle" font-family="Arial" font-size="12" fill="white">2. 定位相关文件</text>
+  </g>
+  
+  <!-- 改动阶段 -->
+  <g transform="translate(650, 250)">
+    <rect x="-80" y="-40" width="160" height="80" rx="10" fill="#2ecc71" stroke="#27ae60" stroke-width="3"/>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="white">改动</text>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="12" fill="white">3. 最小改动原则</text>
+    <text x="0" y="25" text-anchor="middle" font-family="Arial" font-size="12" fill="white">一次只改一小块</text>
+  </g>
+  
+  <!-- 验证阶段 -->
+  <g transform="translate(400, 350)">
+    <rect x="-80" y="-40" width="160" height="80" rx="10" fill="#f39c12" stroke="#d35400" stroke-width="3"/>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="white">验证</text>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="12" fill="white">4. 运行测试</text>
+    <text x="0" y="25" text-anchor="middle" font-family="Arial" font-size="12" fill="white">5. 对照输入输出</text>
+  </g>
+  
+  <!-- 复查阶段 -->
+  <g transform="translate(150, 250)">
+    <rect x="-80" y="-40" width="160" height="80" rx="10" fill="#9b59b6" stroke="#8e44ad" stroke-width="3"/>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="white">复查</text>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="12" fill="white">6. 检查diff差异</text>
+    <text x="0" y="25" text-anchor="middle" font-family="Arial" font-size="12" fill="white">7. 确认无溢出改动</text>
+  </g>
+  
+  <!-- 连接箭头 -->
+  <!-- 理解 -> 改动 -->
+  <path d="M 480 150 Q 550 200 570 250" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="530" y="200" text-anchor="middle" font-family="Arial" font-size="12" fill="#2c3e50">定位后</text>
+  
+  <!-- 改动 -> 验证 -->
+  <path d="M 650 290 Q 550 350 480 350" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="560" y="330" text-anchor="middle" font-family="Arial" font-size="12" fill="#2c3e50">改完后</text>
+  
+  <!-- 验证 -> 复查 -->
+  <path d="M 320 350 Q 250 350 230 290" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="270" y="330" text-anchor="middle" font-family="Arial" font-size="12" fill="#2c3e50">测试通过</text>
+  
+  <!-- 复查 -> 理解（闭环） -->
+  <path d="M 150 210 Q 250 100 320 150" stroke="#e74c3c" stroke-width="2" fill="none" marker-end="url(#arrow-red)"/>
+  <text x="240" y="150" text-anchor="middle" font-family="Arial" font-size="12" fill="#e74c3c">发现问题？</text>
+  
+  <!-- 闭环说明 -->
+  <g transform="translate(400, 450)">
+    <rect x="-200" y="-30" width="400" height="60" rx="8" fill="#34495e" stroke="#2c3e50" stroke-width="2"/>
+    <text x="0" y="-10" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">闭环原则</text>
+    <text x="0" y="10" text-anchor="middle" font-family="Arial" font-size="12" fill="white">只要闭环在，水平会持续增长；闭环断了，错误会稳定积累</text>
+  </g>
+  
+  <!-- 关键工具 -->
+  <g transform="translate(400, 520)">
+    <text x="-150" y="0" text-anchor="middle" font-family="Arial" font-size="14" fill="#2c3e50">Git：记录改动和回退历史</text>
+    <text x="0" y="0" text-anchor="middle" font-family="Arial" font-size="14" fill="#2c3e50">终端：文字命令交互窗口</text>
+    <text x="150" y="0" text-anchor="middle" font-family="Arial" font-size="14" fill="#2c3e50">Diff：检查改动差异</text>
+  </g>
+  
+  <!-- 注释 -->
+  <g transform="translate(400, 580)">
+    <text x="0" y="0" text-anchor="middle" font-family="Arial" font-size="12" fill="#7f8c8d">AI Coding = 理解项目 + 最小改动 + 持续验证</text>
+  </g>
+</svg>

@@ -2,7 +2,17 @@
 
 本课程围绕一个核心问题展开：新人如何把 AI 从“会聊天的工具”变成“可验证、可复用、可迭代的学习与协作助手”。
 
-## 课程结构
+## 当前结构
+
+课程内容只保留 5 个部分：
+
+- 目录：README 与课程总览
+- 课程模块：核心概念与专题模块
+- 课程考核：阶段测验、期末测试、回炉规则
+- 学习 Prompt：可直接复用的学习提示词模板
+- Reference：官方文档与高可信资料入口
+
+## 课程模块
 
 ### 模块 1：AI 到底是什么
 
@@ -24,72 +34,49 @@
 - 目标：掌握终端、Git、代码理解、改小工具和验证的最小流程。
 - 产出：能让 AI 帮你看懂项目、改一处小功能并验证结果。
 
-### 模块 5：Skill 与流程固化
+### 模块 5：学习流程与模板固化
 
-- 目标：理解 prompt 和 skill 的区别，能把稳定流程固化成模板。
-- 产出：写出自己的简单学习 skill。
+- 目标：理解一次性 Prompt 和流程模板的区别，能把稳定流程固化成模板。
+- 产出：写出自己的学习 Prompt 组合和复盘模板。
 
-### 模块 6：用 AI 搭建学习系统
+### 模块 6：常见误区与边界
 
-- 目标：学会从资料、知识点、题目、评分到复盘的一条龙闭环。
-- 产出：给自己生成一套可执行的学习流程。
+- 目标：识别新人最常见的学习误区，建立验证、责任和任务边界意识。
+- 产出：能区分“看起来会了”和“真的学会了”，并能写出自己的使用边界清单。
 
-### 模块 7：专题示例之网络通信基础
+### 模块 7：Vibe Coding 与 AI 原生开发
 
-- 目标：建立对网络通信基本概念的直觉，包括协议、请求、响应、端口、DNS、HTTP。
-- 产出：能看懂一个基础网络请求是怎么走的。
+- 目标：理解 AI 原生开发里的上下文管理、规划驱动和逐步验证。
+- 产出：能说清楚什么叫“先对齐，再执行，再验证”。
 
-### 模块 8：专题示例之安全基础与边界
+### 模块 8：使用 Gemini 绘制系统架构图
 
-- 目标：建立授权、合规、日志、告警、资产、补丁和配置的防守视角。
-- 产出：能说清楚学习安全时什么可以做，什么不能做。
+- 目标：学会在 Google AI Studio 中通过多轮澄清，把模糊想法逐步压实成可预览、可确认、可迭代的系统架构图。
+- 产出：能让模型先提问、再出 ASCII 草图、再确认风格，最后生成可预览的 SVG。
 
-## 四周安排
+## 建议学习顺序
 
-- 第 1 周：AI 基础 + 工具认知 + 第一次小测
-- 第 2 周：提示词、上下文、AI 学习协作 + 第二次小测
-- 第 3 周：AI Coding、Git、终端、验证 + 第三次小测
-- 第 4 周：学习系统、网络通信、安全边界、期末测试
+- 先学模块 1 到模块 3，建立 AI、工具与 Prompt 的基本地图。
+- 再学模块 4 到模块 5，完成最小 AI Coding 协作与学习闭环搭建。
+- 最后学模块 6 到模块 8，把误区、边界、AI 原生开发方法和可视化表达串起来。
+- 每完成一组模块，就做对应阶段测验；全部完成后做期末综合测试。
 
-详细日程见 [学习路径](learning-path.md) 和每周周计划：
-
-- [第 1 周](weeks/week-1.md)
-- [第 2 周](weeks/week-2.md)
-- [第 3 周](weeks/week-3.md)
-- [第 4 周](weeks/week-4.md)
+配套模板见 `../templates/`，外部资料入口见 [参考资料](reference.md)。
 
 ## 学习方式
 
 - 每天 45 分钟。
 - 一半时间学概念，一半时间做互动和产出。
-- 每周至少一次小测。
+- 每完成一个阶段至少做一次测验。
 - 所有知识都尽量落到“解释出来”“做出来”“测出来”三个动作上。
 
 ## 学完后的最低能力线
 
-- 能解释 AI 的基本概念和常见边界。
+- 能解释 AI 的基本概念、常见误区和使用边界。
 - 能用 AI 帮自己拆学习任务和理解资料。
 - 能在小范围 coding 任务中与 AI 协作。
-- 能使用课程内脚本做题、评分和生成复盘报告。
+- 能按照考核规则完成测验、错题回炉和复盘。
 
-## 参考资料
+## 参考入口
 
-- OpenAI Prompting 指南：https://developers.openai.com/api/docs/guides/prompting
-- OpenAI Prompt Engineering 指南：https://developers.openai.com/api/docs/guides/prompt-engineering
-- OpenAI Agents SDK：https://openai.github.io/openai-agents-python/
-- OpenAI Cookbook 官方仓库：https://github.com/openai/openai-cookbook
-- Google AI Studio 概览：https://ai.google.dev/aistudio
-- Google AI Studio Quickstart：https://ai.google.dev/gemini-api/docs/ai-studio-quickstart
-- NotebookLM 官方帮助中心：https://support.google.com/notebooklm/
-- Claude Code Overview：https://docs.anthropic.com/en/docs/claude-code/overview
-- GitHub Docs - Getting started with Git：https://docs.github.com/en/get-started/learning-to-code/getting-started-with-git
-- Pro Git 中文版：https://git-scm.com/book/zh/v2
-- MDN HTTP Overview：https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview
-- OWASP Logging Cheat Sheet：https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
-
-推荐阅读顺序：
-
-1. 先看 OpenAI Prompting 和 Prompt Engineering，建立“怎么和模型说话”的基本结构。
-2. 再看 Google AI Studio、NotebookLM、Claude Code 相关官方页面，建立工具分工感。
-3. 接着看 GitHub Docs、Pro Git 和 Git 官方文档，补上 AI Coding 的底座。
-4. 最后看 MDN 和 OWASP，给网络与安全专题补一张基础地图。
+外部资料统一收录在 [reference.md](reference.md)。

@@ -1,0 +1,82 @@
+<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="450" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#2c3e50">AI工具版图与分工</text>
+  <text x="450" y="65" text-anchor="middle" font-family="Arial" font-size="14" fill="#7f8c8d">不同工具像不同工位，不同任务要去对的位置</text>
+  
+  <!-- Chat工具区 -->
+  <g transform="translate(150, 150)">
+    <rect x="-100" y="-60" width="200" height="120" rx="10" fill="#e74c3c" stroke="#c0392b" stroke-width="2" opacity="0.9"/>
+    <text x="0" y="-40" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="white">对话工具</text>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial" font-size="14" fill="white">ChatGPT / Claude</text>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="12" fill="white">像会议室：讨论、解释、整理</text>
+    <text x="0" y="25" text-anchor="middle" font-family="Arial" font-size="12" fill="white">多轮交互、任务协作</text>
+    <text x="0" y="45" text-anchor="middle" font-family="Arial" font-size="11" fill="#ffcccc">适合：定义问题、头脑风暴</text>
+  </g>
+  
+  <!-- Notebook工具区 -->
+  <g transform="translate(450, 150)">
+    <rect x="-100" y="-60" width="200" height="120" rx="10" fill="#3498db" stroke="#2980b9" stroke-width="2" opacity="0.9"/>
+    <text x="0" y="-40" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="white">资料工具</text>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial" font-size="14" fill="white">NotebookLM</text>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="12" fill="white">像资料室：围绕文档学习</text>
+    <text x="0" y="25" text-anchor="middle" font-family="Arial" font-size="12" fill="white">理解、摘要、问答</text>
+    <text x="0" y="45" text-anchor="middle" font-family="Arial" font-size="11" fill="#cce5ff">适合：消化资料、提取重点</text>
+  </g>
+  
+  <!-- Coding工具区 -->
+  <g transform="translate(750, 150)">
+    <rect x="-100" y="-60" width="200" height="120" rx="10" fill="#2ecc71" stroke="#27ae60" stroke-width="2" opacity="0.9"/>
+    <text x="0" y="-40" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="white">编码工具</text>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Claude Code / Codex</text>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="12" fill="white">像工位：代码仓库协作</text>
+    <text x="0" y="25" text-anchor="middle" font-family="Arial" font-size="12" fill="white">终端操作、项目管理</text>
+    <text x="0" y="45" text-anchor="middle" font-family="Arial" font-size="11" fill="#ccffcc">适合：开发、调试、部署</text>
+  </g>
+  
+  <!-- Search工具区 -->
+  <g transform="translate(150, 320)">
+    <rect x="-100" y="-60" width="200" height="120" rx="10" fill="#f39c12" stroke="#d35400" stroke-width="2" opacity="0.9"/>
+    <text x="0" y="-40" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="white">搜索工具</text>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Google AI Studio</text>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="12" fill="white">像检索台：找资料和来源</text>
+    <text x="0" y="25" text-anchor="middle" font-family="Arial" font-size="12" fill="white">模型调试、效果观察</text>
+    <text x="0" y="45" text-anchor="middle" font-family="Arial" font-size="11" fill="#ffe6cc">适合：验证、对比、发现</text>
+  </g>
+  
+  <!-- 平台工具区 -->
+  <g transform="translate(450, 320)">
+    <rect x="-100" y="-60" width="200" height="120" rx="10" fill="#9b59b6" stroke="#8e44ad" stroke-width="2" opacity="0.9"/>
+    <text x="0" y="-40" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="white">平台工具</text>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial" font-size="14" fill="white">OpenRouter</text>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="12" fill="white">像模型枢纽：统一接口</text>
+    <text x="0" y="25" text-anchor="middle" font-family="Arial" font-size="12" fill="white">多模型对比、快速切换</text>
+    <text x="0" y="45" text-anchor="middle" font-family="Arial" font-size="11" fill="#e6ccff">适合：实验、评估、选型</text>
+  </g>
+  
+  <!-- 评测工具区 -->
+  <g transform="translate(750, 320)">
+    <rect x="-100" y="-60" width="200" height="120" rx="10" fill="#1abc9c" stroke="#16a085" stroke-width="2" opacity="0.9"/>
+    <text x="0" y="-40" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="white">评测工具</text>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial" font-size="14" fill="white">AIArena</text>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="12" fill="white">像天梯图：客观表现排名</text>
+    <text x="0" y="25" text-anchor="middle" font-family="Arial" font-size="12" fill="white">盲测评分、模型对比</text>
+    <text x="0" y="45" text-anchor="middle" font-family="Arial" font-size="11" fill="#ccf2f0">适合：决策参考、趋势了解</text>
+  </g>
+  
+  <!-- 任务匹配指南 -->
+  <g transform="translate(450, 480)">
+    <rect x="-250" y="-40" width="500" height="80" rx="8" fill="#34495e" stroke="#2c3e50" stroke-width="2"/>
+    <text x="0" y="-20" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">任务匹配原则</text>
+    <text x="0" y="0" text-anchor="middle" font-family="Arial" font-size="12" fill="white">1. 明确任务类型 → 选择对应工具类别</text>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial" font-size="12" fill="white">2. 考虑协作需求 → 选择支持该协作模式的工具</text>
+    <text x="0" y="40" text-anchor="middle" font-family="Arial" font-size="12" fill="white">3. 验证结果需求 → 选择有验证机制的工具</text>
+  </g>
+  
+  <!-- 注释 -->
+  <g transform="translate(450, 580)">
+    <text x="0" y="0" text-anchor="middle" font-family="Arial" font-size="12" fill="#7f8c8d">工具不是越多越强，而是越分工越稳</text>
+  </g>
+</svg>

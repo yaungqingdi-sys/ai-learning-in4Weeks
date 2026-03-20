@@ -1,6 +1,6 @@
-# 新人快速理解 AI：从概念到上手的 4 周学习框架
+# 新人快速理解 AI：从概念到上手的课程框架
 
-这是一套面向“会一点 AI，但不系统”的新人的训练手册。目标不是把学习者变成研究员，而是让学习者在 4 周内形成一条稳定的学习闭环：知道 AI 是什么，知道怎么和 AI 协作，能用 AI 帮自己理解知识和改小工具，并能通过题库、评分和复盘持续迭代。
+这是一套面向“会一点 AI，但不系统”的新人的训练手册。目标不是把学习者变成研究员，而是让学习者形成一条稳定的学习闭环：知道 AI 是什么，知道怎么和 AI 协作，能用 AI 帮自己理解知识和改小工具，并能通过题库、评分和复盘持续迭代。
 
 课程总目标：
 
@@ -8,47 +8,80 @@
 2. 会用 AI 辅助学习，而不是只会闲聊。
 3. 会用 AI 做基础 coding 协作，能改小工具。
 4. 会搭自己的学习闭环：资料 -> 理解 -> 练习 -> 测试 -> 复盘。
-5. 对网络通信和网络安全基础建立初步理解，但安全内容只作为合规专题示例。
+5. 建立验证、复盘和边界意识，避免把 AI 直接当答案机器。
 
-## 课程目录
+## 课程结构
 
-- [课程总览](docs/course-overview.md)
-- [4 周学习路径](docs/learning-path.md)
-- [考核与回炉机制](docs/assessment-policy.md)
+当前课程只保留 5 个部分：
+
+- 目录
+- 课程模块
+- 课程考核
+- 学习 Prompt
+- Reference
+
+![课程系统结构图](docs/assets/readme/course-system-structure.svg)
+
+- 目录
+  - [README](README.md)
+  - [课程总览](docs/course-overview.md)
 - 模块文档
-  - [模块 1：AI 基础](docs/modules/module-1-ai-basics.md)
-  - [模块 2：提示词、上下文与协作](docs/modules/module-2-prompt-context-skill.md)
-  - [模块 3：工具版图](docs/modules/module-3-tools-landscape.md)
-  - [模块 4：AI Coding 基础](docs/modules/module-4-ai-coding-basics.md)
-  - [模块 5：搭建学习系统](docs/modules/module-5-build-learning-system.md)
-  - [模块 6：网络通信基础](docs/modules/module-6-networking-basics.md)
-  - [模块 7：网络安全基础](docs/modules/module-7-security-foundations.md)
-  - [模块 8：常见误区与边界](docs/modules/module-8-misconceptions-and-boundaries.md)
-- 周计划
-  - [第 1 周](docs/weeks/week-1.md)
-  - [第 2 周](docs/weeks/week-2.md)
-  - [第 3 周](docs/weeks/week-3.md)
-  - [第 4 周](docs/weeks/week-4.md)
-- 模板与 Skill 示例
-  - `templates/`
-  - `skills/`
-- 题库
+  - [模块 1：AI 基础](docs/modules/module-1-ai-basics/AI基础.md)
+  - [模块 2：提示词、上下文与协作](docs/modules/module-2-prompt-context-collaboration/提示词上下文与协作.md)
+  - [模块 3：工具版图](docs/modules/module-3-tools-landscape/工具版图.md)
+  - [模块 4：AI Coding 基础](docs/modules/module-4-ai-coding-basics/AICoding基础.md)
+  - [模块 5：搭建学习系统](docs/modules/module-5-build-learning-system/搭建学习系统.md)
+  - [模块 6：常见误区与边界](docs/modules/module-6-misconceptions-and-boundaries/常见误区与边界.md)
+  - [模块 7：Vibe Coding 范式](docs/modules/module-7-vibe-coding/VibeCoding范式.md)
+  - [模块 8：使用 Gemini 绘制系统架构图](docs/modules/module-8-gemini-architecture-diagrams/使用Gemini绘制系统架构图.md)
+- 课程考核
+  - [考核与回炉机制](docs/assessment-policy.md)
   - `quizzes/`
+- 学习 Prompt
+  - `templates/`
+- Reference
+  - [参考资料](docs/reference.md)
 - 脚本与测试
   - `scripts/`
   - `tests/`
-- 示例数据
-  - `examples/`
+
+## 使用流程
+
+如果把这套课程看成一个最小学习系统，它的使用顺序大致是先建立地图，再进入模块，再借 Prompt 把理解落成动作，最后用考核和复盘把闭环收住。
+
+```mermaid
+flowchart LR
+    A[README / 课程总览] --> B[选择课程模块]
+    B --> C[配合学习 Prompt]
+    C --> D[完成阶段测验]
+    D --> E[按考核规则复盘]
+    E --> F[回到模块补缺口]
+    F --> G[查 Reference 深挖]
+```
+
+这条流程的重点不是“按顺序点完所有文件”，而是让每一步都有明确角色。模块负责建立概念和方法，Prompt 负责把任务说清楚，题库和考核负责逼出真实理解，Reference 则负责在需要时补官方依据。
+
+## 学习 Prompt 使用说明
+
+`templates/` 里的 Prompt 不是拿来收藏的，而是拿来直接改、直接用的。更稳的方式不是临场想到什么问什么，而是先判断自己现在卡在哪一步，再选对应模板。
+
+![学习 Prompt 使用流程图](docs/assets/readme/prompt-usage-workflow.svg)
+
+如果你是刚接触一个新主题，不知道从哪里开始，优先用 `concept-learning-prompt.md`。如果你已经知道要学什么，只是不知道怎么拆成几天、每天做什么，就用 `study-plan-prompt.md`。如果你读的是代码仓库、脚本或项目材料，优先用 `project-understanding-prompt.md`。如果你已经做完题，知道自己答错了但说不清错在哪里，就直接用 `review-and-remediation-prompt.md`。如果你已经整理出一批知识点，想把它们变成题库，再用 `quiz-generation-prompt.md`。
+
+实际使用时，不要把模板原样丢给模型。先把方括号里的占位内容换成你自己的主题、当前水平、时间预算、输出要求和边界。能写具体就不要写抽象，例如不要只写“帮我学 AI”，而要写“我已经知道 Chat 和 Search 的区别，但不会判断什么时候该用 Agent；我每天只有 45 分钟；请先给我 3 天计划，再给每天 3 个检查点”。
+
+一轮用完之后，也不要急着换模板。先看输出有没有真的帮你推进任务：如果回答太泛，通常是目标太空；如果回答太深，通常是当前水平写得不够清；如果回答看起来很顺但用不上，通常是输出格式和验收条件没有写明。Prompt 的价值不在“句子漂亮”，而在它能不能把任务压到一个可执行、可验证的状态。
 
 ## 如何学习
 
 建议按下面顺序执行：
 
-1. 先读 [课程总览](docs/course-overview.md)，知道 4 周分别学什么。
-2. 再看 [学习路径](docs/learning-path.md)，明确每天 45 分钟怎么安排。
-3. 每周按对应周文档推进，并同步阅读相关模块文档。
-4. 做每周题库和期末题库，低于 80 分时按 [考核规则](docs/assessment-policy.md) 回炉。
-5. 把 `templates/` 中的提示词和 `skills/` 中的流程模板复制出来，真正用于自己的学习任务。
+1. 先读 [课程总览](docs/course-overview.md)，建立整体地图。
+2. 按模块推进学习，并同步使用 `templates/` 里的 Prompt 模板。
+3. 完成阶段测验和期末题库，低于 80 分时按 [考核规则](docs/assessment-policy.md) 回炉。
+4. 遇到概念、项目理解或复盘任务时，优先复用现成 Prompt。
+5. 需要外部资料时，再回到 [参考资料](docs/reference.md) 查官方来源。
 
 ## 如何运行验证
 
@@ -56,8 +89,6 @@
 
 ```bash
 python3 scripts/validate_quizzes.py
-python3 scripts/score_submission.py --quiz quizzes/final-exam.json --submission examples/sample_submission.json --output examples/sample_score.json
-python3 scripts/generate_progress_report.py --score examples/sample_score.json --output examples/sample_progress_report.md
 python3 -m unittest discover -s tests -v
 ```
 
@@ -65,47 +96,12 @@ python3 -m unittest discover -s tests -v
 
 ```bash
 make validate
-make sample-score
-make sample-report
 make test
 ```
 
-## 本地课程中心 (Course Hub)
-
-项目提供了一个交互式的本地 Web 界面，整合了仓库中的文档、模板和题库。你可以通过它进行沉浸式阅读、在线做题并生成学习报告。
-
-### 启动方式
-
-```bash
-# 方式 1：使用内置脚本（推荐）
-python3 scripts/serve_course.py --port 8000 --open
-
-# 方式 2：使用标准 Python 静态服务器
-python3 -m http.server 8000
-# 然后在浏览器访问 http://localhost:8000/web/
-```
-
-### 核心功能与特性
-
--   **全平台响应式适配**：支持 PC 宽屏、平板和手机浏览。在手机上提供侧边抽屉式导航，在 PC 上支持**侧边栏一键收起/展开**，最大化阅读空间。
--   **URL 状态持久化**：采用 Hash 路由机制（如 `#reader?path=...`），刷新页面或分享链接时能保持当前阅读的文档或正在做的题库。
--   **沉浸式阅读体验**：
-    -   一键切换主文档、模块、周计划、模板和 Skill 示例。
-    -   优化的 Markdown 渲染，支持表格、代码块自动溢出处理。
-    -   自动记忆侧边栏折叠状态。
--   **交互式在线做题**：
-    -   选择任意周测或期末题库在线作答。
-    -   **客观题自动批改**：提交后立即显示正误和解析。
-    -   **主观题自评系统**：对照参考答案进行自评，实时计算总分。
-    -   **导出与报告**：支持导出答卷 JSON 或直接生成 Markdown 格式的进阶报告。
-
 ## 你会得到什么
 
-- 一套可直接执行的 4 周学习计划。
+- 一套清晰可执行的 AI 入门课程结构。
 - 一组可复用的学习提示词模板。
-- 一套围绕理解、练习、测试、复盘的题库和脚本。
-- 一套安全边界明确的技术专题示例。
-
-## 安全边界
-
-本课程中的网络安全内容只用于理解基础概念、合规边界和防守视角，不包含未授权扫描、漏洞利用、武器化改造、横向移动、口令爆破或其他攻击性内容。
+- 一套围绕理解、练习、测试、复盘的题库和考核规则。
+- 一套强调验证、复盘与边界意识的学习框架。
