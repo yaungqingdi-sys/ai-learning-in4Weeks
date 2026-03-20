@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="380" viewBox="0 0 1280 380" role="img" aria-labelledby="title desc">
+  <title id="title">课程使用流程图</title>
+  <desc id="desc">展示从 README 和课程总览进入，到模块、Prompt、测验、复盘、补缺口和查阅 Reference 的课程使用流程。</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7f8fc; }
+      .card { fill: #ffffff; stroke: #d5ddea; stroke-width: 2; rx: 18; }
+      .accent { fill: #e8f0ff; stroke: #7ba2ff; stroke-width: 2; rx: 18; }
+      .support { fill: #eef8f1; stroke: #86bf9a; stroke-width: 2; rx: 18; }
+      .line { stroke: #66758f; stroke-width: 3; fill: none; }
+      .title { font: 700 28px 'Helvetica Neue', Arial, sans-serif; fill: #213045; }
+      .label { font: 700 18px 'Helvetica Neue', Arial, sans-serif; fill: #243247; }
+      .sub { font: 400 14px 'Helvetica Neue', Arial, sans-serif; fill: #5b6880; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#66758f"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1280" height="380"/>
+  <text class="title" x="56" y="56">课程使用流程</text>
+
+  <rect class="accent" x="46" y="126" width="160" height="92" rx="18"/>
+  <text class="label" x="72" y="162">README /</text>
+  <text class="label" x="64" y="188">课程总览</text>
+
+  <rect class="card" x="226" y="126" width="150" height="92" rx="18"/>
+  <text class="label" x="252" y="175">选择课程模块</text>
+
+  <rect class="card" x="396" y="126" width="160" height="92" rx="18"/>
+  <text class="label" x="426" y="175">配合学习 Prompt</text>
+
+  <rect class="support" x="576" y="126" width="160" height="92" rx="18"/>
+  <text class="label" x="605" y="175">完成阶段测验</text>
+
+  <rect class="card" x="756" y="126" width="170" height="92" rx="18"/>
+  <text class="label" x="782" y="175">按考核规则复盘</text>
+
+  <rect class="card" x="946" y="126" width="170" height="92" rx="18"/>
+  <text class="label" x="973" y="175">回到模块补缺口</text>
+
+  <rect class="accent" x="1136" y="126" width="110" height="92" rx="18"/>
+  <text class="label" x="1158" y="175">查 Reference</text>
+
+  <path class="line" d="M206 172 H226" marker-end="url(#arrow)"/>
+  <path class="line" d="M376 172 H396" marker-end="url(#arrow)"/>
+  <path class="line" d="M556 172 H576" marker-end="url(#arrow)"/>
+  <path class="line" d="M736 172 H756" marker-end="url(#arrow)"/>
+  <path class="line" d="M926 172 H946" marker-end="url(#arrow)"/>
+  <path class="line" d="M1116 172 H1136" marker-end="url(#arrow)"/>
+
+  <path class="line" d="M1191 218 C1191 292, 1031 292, 1031 218" marker-end="url(#arrow)"/>
+  <text class="sub" x="846" y="315">复盘后如果发现理解有缺口，就回到模块继续补；需要原始依据时，再查 Reference。</text>
+</svg>
