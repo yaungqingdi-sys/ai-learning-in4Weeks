@@ -1,7 +1,7 @@
 {
   "quiz_id": "final-exam",
   "title": "期末综合测试：新人快速理解 AI",
-  "description": "综合考查 AI 基础、提示词协作、AI Coding、学习闭环、误区边界与 Vibe Coding。",
+  "description": "综合考查 AI 基础、AI 协作思维、提示词协作、AI Coding、学习闭环、误区边界与 Vibe Coding。",
   "passing_percent": 80,
   "questions": [
     {
@@ -450,6 +450,21 @@
       "explanation": "题目考查把课程方法沉淀成个人工作清单的能力。",
       "score": 5,
       "tags": ["prompt", "verification", "workflow"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "FINAL-031",
+      "type": "scenario",
+      "prompt": "你要完成一次“整理会议纪要并输出行动项”的工作。请说明如果把 AI 当成一种思维方式，而不只是一个对话框，你会怎样分配人和 AI 的职责。",
+      "answer": [
+        "先由人定义目标、受众、输出格式和边界",
+        "让 AI 先做摘要、提取行动项、识别待确认问题或补齐初稿结构",
+        "由人复核事实、补上下文、确认优先级和最终发送内容",
+        "如果需要，还可以让 AI 继续连接资料或改写成不同版本"
+      ],
+      "explanation": "题目考查是否理解 AI 可以嵌入任务链路中承担思考与连接动作，但最终判断和责任仍在人。",
+      "score": 5,
+      "tags": ["ai-basics", "collaboration", "workflow"],
       "difficulty": "medium"
     }
   ]

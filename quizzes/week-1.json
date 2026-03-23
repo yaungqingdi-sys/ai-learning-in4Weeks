@@ -1,7 +1,7 @@
 {
   "quiz_id": "week-1",
   "title": "阶段测验 1：AI基础与工具地图",
-  "description": "覆盖 AI 基础概念、工具分工、任务判断与验证意识。",
+  "description": "覆盖 AI 基础概念、工具分工、任务判断、验证意识与 AI 协作思维。",
   "passing_percent": 80,
   "questions": [
     {
@@ -303,6 +303,22 @@
       "explanation": "先明确边界、再做最小版本、再验证，是稳定入门方式。",
       "score": 5,
       "tags": ["vibe-coding", "workflow", "verification"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "W1-021",
+      "type": "single_choice",
+      "prompt": "下面哪项最符合“把 AI 当成一种思维方式”这句话的意思？",
+      "options": [
+        {"key": "A", "text": "只在完全没思路时，临时把 AI 当搜索框用一下"},
+        {"key": "B", "text": "主动把任务里适合外包的思考步骤拆出来，让 AI 先整理、连接或起草，再由人判断和验证"},
+        {"key": "C", "text": "把所有任务一次性交给 AI，自己不再参与"},
+        {"key": "D", "text": "只把 AI 当成最后生成答案的机器"}
+      ],
+      "answer": "B",
+      "explanation": "课程强调的是把 AI 嵌进工作流，承担部分思考与连接动作，而不是完全放手或只在最后出答案。",
+      "score": 5,
+      "tags": ["ai-basics", "workflow", "collaboration"],
       "difficulty": "medium"
     }
   ]
