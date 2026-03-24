@@ -27,7 +27,7 @@
 
   <rect class="panel" x="350" y="90" width="290" height="170" rx="20"/>
   <text class="label" x="443" y="132">课程模块</text>
-  <text class="copy" x="387" y="164">模块 1 到模块 8</text>
+  <text class="copy" x="382" y="164">模块 1 到模块 10</text>
   <text class="copy" x="406" y="188">概念、方法、案例、图示</text>
   <text class="copy" x="433" y="212">每个模块都有主入口和参考索引</text>
 

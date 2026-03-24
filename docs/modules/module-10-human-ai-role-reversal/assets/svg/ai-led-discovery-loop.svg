@@ -1,0 +1,65 @@
+<svg width="960" height="560" viewBox="0 0 960 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">人机互换工作流</title>
+  <desc id="desc">展示人在提出初始目标后，由 AI 主导追问、识别隐含条件、重述理解并在达到高置信度后进入执行的循环。</desc>
+  <style>
+    .bg { fill: #f7f4ec; }
+    .title { font: 700 28px "PingFang SC", "Noto Sans CJK SC", sans-serif; fill: #1d3124; }
+    .label { font: 700 20px "PingFang SC", "Noto Sans CJK SC", sans-serif; fill: #17331f; }
+    .copy { font: 500 14px "PingFang SC", "Noto Sans CJK SC", sans-serif; fill: #35513e; }
+    .panel { fill: #ffffff; stroke: #2f6a46; stroke-width: 2; }
+    .accent { fill: #dbead8; stroke: #2f6a46; stroke-width: 2; }
+    .decision { fill: #f6e7bf; stroke: #8a6a19; stroke-width: 2; }
+    .arrow { stroke: #2f6a46; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+    .arrow-warm { stroke: #8a6a19; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+    .small { font: 600 13px "PingFang SC", "Noto Sans CJK SC", sans-serif; fill: #785d18; }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="#2f6a46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrowhead-warm" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="#8a6a19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="960" height="560" rx="24"/>
+  <text class="title" x="54" y="58">人机互换：让 AI 先把问题问清楚</text>
+
+  <rect class="accent" x="54" y="110" width="200" height="110" rx="18"/>
+  <text class="label" x="95" y="150">人给出初始目标</text>
+  <text class="copy" x="84" y="182">例：帮我学懂一个概念</text>
+  <text class="copy" x="98" y="205">但很多条件还没说清</text>
+
+  <rect class="panel" x="320" y="110" width="260" height="110" rx="18"/>
+  <text class="label" x="366" y="150">AI 主导追问</text>
+  <text class="copy" x="350" y="182">先问目标、场景、边界</text>
+  <text class="copy" x="347" y="205">再问时间、风险和优先级</text>
+
+  <rect class="panel" x="646" y="110" width="260" height="110" rx="18"/>
+  <text class="label" x="688" y="150">补齐隐含条件</text>
+  <text class="copy" x="676" y="182">把默认前提和禁区说出来</text>
+  <text class="copy" x="684" y="205">避免“没说但很关键”</text>
+
+  <rect class="panel" x="110" y="310" width="260" height="110" rx="18"/>
+  <text class="label" x="148" y="350">AI 重述当前理解</text>
+  <text class="copy" x="146" y="382">确认目标、假设、缺口</text>
+  <text class="copy" x="156" y="405">让人快速指出偏差</text>
+
+  <polygon class="decision" points="570,290 710,365 570,440 430,365"/>
+  <text class="label" x="492" y="360">置信度够了吗</text>
+  <text class="small" x="514" y="387">目标是否已足够清楚</text>
+
+  <rect class="accent" x="736" y="310" width="170" height="110" rx="18"/>
+  <text class="label" x="771" y="350">进入执行</text>
+  <text class="copy" x="760" y="382">再去讲解、规划</text>
+  <text class="copy" x="761" y="405">生成或评估结果</text>
+
+  <path class="arrow" d="M254 165H320" marker-end="url(#arrowhead)"/>
+  <path class="arrow" d="M580 165H646" marker-end="url(#arrowhead)"/>
+  <path class="arrow" d="M776 220V262C776 280 758 290 740 290H625" marker-end="url(#arrowhead)"/>
+  <path class="arrow" d="M370 365H430" marker-end="url(#arrowhead)"/>
+  <path class="arrow" d="M710 365H736" marker-end="url(#arrowhead)"/>
+  <path class="arrow-warm" d="M500 425C460 455 396 462 336 445C268 426 233 394 233 420V420" marker-end="url(#arrowhead-warm)"/>
+  <text class="small" x="275" y="487">不够：继续追问和补条件</text>
+</svg>
