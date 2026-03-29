@@ -19,12 +19,12 @@
 
 ```mermaid
 flowchart TD
-    A[你下达指令: 把这10个表格合了] --> B[Superpowers 思考: 需要用 Python 读 Excel]
-    B --> C[编写并运行代码]
-    C --> D{运行报错了吗?}
-    D -- 是 --> E[看报错原因并重写代码]
+    A["你下达指令: 把这10个表格合了"] --> B["Superpowers 思考: 需要用 Python 读 Excel"]
+    B --> C["编写并运行代码"]
+    C --> D{"运行报错了吗?"}
+    D -- "是" --> E["看报错原因并重写代码"]
     E --> C
-    D -- 否 --> F[交付结果文件]
+    D -- "否" --> F["交付结果文件"]
 ```
 
 **上下文感知 (Context Awareness)**
