@@ -35,6 +35,7 @@
 - Pro Git 中文版：https://git-scm.com/book/zh/v2
 - Git 官方仓库：https://github.com/git/git
 - vibe-coding-cn 项目主页：https://github.com/2025Emma/vibe-coding-cn
+- Superpowers GitHub 仓库：https://github.com/obra/superpowers
 
 ## 推荐使用方式
 
