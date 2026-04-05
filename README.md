@@ -40,6 +40,7 @@
   - [模块 9：使用 Gemini 与 Codex 生成可控 PPT](docs/modules/module-9-gemini-codex-editable-ppt/使用Gemini与Codex生成可控PPT.md)
   - [模块 10：人机互换](docs/modules/module-10-human-ai-role-reversal/人机互换.md)
   - [模块 11：使用 Superpowers](docs/modules/module-11-use-superpowers/使用Superpowers.md)
+  - [模块 12：个人知识库与AI记忆](docs/modules/module-12-personal-knowledge-base/个人知识库与AI记忆.md)
 - 课程考核
   - [考核与回炉机制](docs/assessment-policy.md)
   - `quizzes/`
